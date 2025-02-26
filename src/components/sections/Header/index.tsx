@@ -113,13 +113,13 @@ function HeaderLogoLeftPrimaryRight(props) {
                 </div>
             )}
             {primaryLinks.length > 0 && (
-                <ul className="hidden ml-auto lg:flex lg:items-center gap-x-10" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                <ul className="ml-auto lg:flex lg:items-center gap-x-10" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
             {secondaryLinks.length > 0 && (
                 <ul
-                    className={classNames('hidden', 'lg:flex', 'lg:items-center', 'gap-x-2.5', primaryLinks.length > 0 ? 'ml-10' : 'ml-auto')}
+                    className={classNames('lg:flex', 'lg:items-center', 'gap-x-2.5', primaryLinks.length > 0 ? 'ml-10' : 'ml-auto')}
                     {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}
                 >
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
@@ -140,12 +140,12 @@ function HeaderLogoCenteredPrimaryLeft(props) {
                 </div>
             )}
             {primaryLinks.length > 0 && (
-                <ul className="hidden lg:flex lg:items-center gap-x-10" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                <ul className="lg:flex lg:items-center gap-x-10" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
             {secondaryLinks.length > 0 && (
-                <ul className="hidden lg:flex lg:items-center ml-auto gap-x-2.5" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
+                <ul className="lg:flex lg:items-center ml-auto gap-x-2.5" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
@@ -165,7 +165,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
                     </div>
                 )}
                 {secondaryLinks.length > 0 && (
-                    <ul className="hidden lg:flex lg:items-center gap-x-2.5 ml-auto" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
+                    <ul className="lg:flex lg:items-center gap-x-2.5 ml-auto" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                         <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                     </ul>
                 )}
@@ -173,7 +173,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
             </div>
             {primaryLinks.length > 0 && (
                 <ul
-                    className="hidden mt-4 lg:flex lg:items-center lg:justify-center gap-x-10"
+                    className="mt-4 lg:flex lg:items-center lg:justify-center gap-x-10"
                     {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}
                 >
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
