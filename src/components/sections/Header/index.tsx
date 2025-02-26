@@ -183,74 +183,74 @@ function HeaderLogoCenteredPrimaryCentered(props) {
     );
 }
 
-function MobileMenu(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const router = useRouter();
+// function MobileMenu(props) {
+//     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
+//     const [isMenuOpen, setIsMenuOpen] = useState(false);
+//     const router = useRouter();
 
-    const openMobileMenu = () => {
-        setIsMenuOpen(true);
-        document.body.style.overflow = 'hidden';
-        const closeButton = document.querySelector('button[aria-label="Close Menu"]') as HTMLButtonElement | null;
-        if (closeButton) {
-          closeButton.focus();
-        } else {
-          console.error("Button with aria-label 'Close Menu' not found.");
-        }
-    };
+//     const openMobileMenu = () => {
+//         setIsMenuOpen(true);
+//         document.body.style.overflow = 'hidden';
+//         const closeButton = document.querySelector('button[aria-label="Close Menu"]') as HTMLButtonElement | null;
+//         if (closeButton) {
+//           closeButton.focus();
+//         } else {
+//           console.error("Button with aria-label 'Close Menu' not found.");
+//         }
+//     };
 
-    const closeMobileMenu = () => {
-        setIsMenuOpen(false);
-        document.body.style.overflow = 'unset';
-        const openButton = document.querySelector('button[aria-label="Open Menu"]') as HTMLButtonElement | null;
-        if (openButton) {
-          openButton.focus();
-        } else {
-          console.error("Button with aria-label 'Open Menu' not found.");
-        }
-    };
+//     const closeMobileMenu = () => {
+//         setIsMenuOpen(false);
+//         document.body.style.overflow = 'unset';
+//         const openButton = document.querySelector('button[aria-label="Open Menu"]') as HTMLButtonElement | null;
+//         if (openButton) {
+//           openButton.focus();
+//         } else {
+//           console.error("Button with aria-label 'Open Menu' not found.");
+//         }
+//     };
 
-    useEffect(() => {
-        const handleRouteChange = () => {
-            setIsMenuOpen(false);
-            document.body.style.overflow = 'unset';
-        };
-        router.events.on('routeChangeStart', handleRouteChange);
+//     useEffect(() => {
+//         const handleRouteChange = () => {
+//             setIsMenuOpen(false);
+//             document.body.style.overflow = 'unset';
+//         };
+//         router.events.on('routeChangeStart', handleRouteChange);
 
-        return () => {
-            router.events.off('routeChangeStart', handleRouteChange);
-        };
-    }, [router.events]);
+//         return () => {
+//             router.events.off('routeChangeStart', handleRouteChange);
+//         };
+//     }, [router.events]);
 
-    return (
-        <div className="ml-auto lg:hidden">
-            <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
-                <span className="sr-only">Open Menu</span>
-                <MenuIcon className="w-6 h-6 fill-current" />
-            </button>
-            <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
-                <div className="flex flex-col min-h-full">
-                    <div className="flex items-center justify-between mb-10">
-                        {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
-                        <button aria-label="Close Menu" aria-expanded="true" title="Close Menu" className="p-2 -mr-1" onClick={closeMobileMenu}>
-                            <CloseIcon className="w-6 h-6 fill-current" />
-                        </button>
-                    </div>
-                    {primaryLinks.length > 0 && (
-                        <ul {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
-                            <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
-                        </ul>
-                    )}
-                    {secondaryLinks.length > 0 && (
-                        <ul {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
-                            <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
-                        </ul>
-                    )}
-                </div>
-            </div>
-        </div>
-    );
-}
+//     return (
+//         <div className="ml-auto lg:hidden">
+//             <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
+//                 <span className="sr-only">Open Menu</span>
+//                 <MenuIcon className="w-6 h-6 fill-current" />
+//             </button>
+//             <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
+//                 <div className="flex flex-col min-h-full">
+//                     <div className="flex items-center justify-between mb-10">
+//                         {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
+//                         <button aria-label="Close Menu" aria-expanded="true" title="Close Menu" className="p-2 -mr-1" onClick={closeMobileMenu}>
+//                             <CloseIcon className="w-6 h-6 fill-current" />
+//                         </button>
+//                     </div>
+//                     {primaryLinks.length > 0 && (
+//                         <ul {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+//                             <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
+//                         </ul>
+//                     )}
+//                     {secondaryLinks.length > 0 && (
+//                         <ul {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
+//                             <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
+//                         </ul>
+//                     )}
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
 
 function SiteLogoLink({ title, logo, enableAnnotations }) {
     return (
