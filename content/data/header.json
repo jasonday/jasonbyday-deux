@@ -19,8 +19,8 @@
                     "label": "Blog",
                     "altText": "",
                     "url": "/blog",
-                    "showIcon": true,
-                    "icon": "arrowRight",
+                    "showIcon": false,
+                    "icon": "chevronRight",
                     "iconPosition": "right",
                     "style": "secondary",
                     "elementId": ""
