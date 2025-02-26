@@ -20,7 +20,7 @@
                     "altText": "",
                     "url": "/blog",
                     "showIcon": false,
-                    "icon": "",
+                    "icon": "chevronRight",
                     "iconPosition": "right",
                     "style": "secondary",
                     "elementId": ""
