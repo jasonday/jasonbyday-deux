@@ -35,7 +35,7 @@ export default function EmailFormControl(props) {
             )}
             <input
                 id={name}
-                className="sb-input text-inherit bg-transparent border-b border-current w-full py-2 focus:outline-none"
+                className="sb-input text-inherit bg-transparent border border-current w-full p-4"
                 type="email"
                 name={name}
                 {...attr}
