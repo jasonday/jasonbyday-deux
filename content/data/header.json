@@ -16,7 +16,7 @@
             "links": [
                 {
                     "type": "Link",
-                    "label": "Dropdown item",
+                    "label": "Blog",
                     "altText": "",
                     "url": "/",
                     "showIcon": false,
