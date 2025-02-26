@@ -55,7 +55,7 @@ function HeaderVariants(props) {
 function HeaderLogoLeftPrimaryLeft(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -79,7 +79,7 @@ function HeaderLogoLeftPrimaryLeft(props) {
 function HeaderLogoLeftPrimaryCentered(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -106,7 +106,7 @@ function HeaderLogoLeftPrimaryCentered(props) {
 function HeaderLogoLeftPrimaryRight(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -133,7 +133,7 @@ function HeaderLogoLeftPrimaryRight(props) {
 function HeaderLogoCenteredPrimaryLeft(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -158,7 +158,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
         <>
-            <div className="relative flex items-center">
+            <div className="relative flex flex-wrap items-center">
                 {(title || logo?.url) && (
                     <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
                         <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -218,7 +218,7 @@ function MobileMenu(props) {
                 <MenuIcon className="w-6 h-6 fill-current" />
             </button>
         </div>
-        <div className="ml-auto">
+        <div className="ml-auto basis-full ">
              <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
                     <div className="flex flex-col min-h-full">
                         {/* <div className="flex items-center justify-between mb-10">
