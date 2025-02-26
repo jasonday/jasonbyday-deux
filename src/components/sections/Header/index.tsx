@@ -187,18 +187,18 @@ function MobileMenu(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
-    const openButton = document.querySelectorAll('button[aria-label="Open Menu"]');
-    const closeButton = document.querySelectorAll('button[aria-label="Close Menu"]');
 
     const openMobileMenu = () => {
         setIsMenuOpen(true);
         document.body.style.overflow = 'hidden';
+        const closeButton = document.querySelectorAll('button[aria-label="Close Menu"]');
         closeButton.focus();
     };
 
     const closeMobileMenu = () => {
         setIsMenuOpen(false);
         document.body.style.overflow = 'unset';
+        const openButton = document.querySelectorAll('button[aria-label="Open Menu"]');
         openButton.focus();
     };
 
