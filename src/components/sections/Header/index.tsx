@@ -149,7 +149,7 @@ function HeaderLogoCenteredPrimaryLeft(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+            {/* {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />} */}
         </div>
     );
 }
