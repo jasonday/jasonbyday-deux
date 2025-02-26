@@ -27,7 +27,7 @@
         "type": "ImageBlock",
         "url": "/images/caricature2.png",
         "altText": "Jason Day caricature",
-        "elementId": "",
+        "elementId": "logo",
         "styles": {
             "self": {
                 "borderRadius": "medium"
