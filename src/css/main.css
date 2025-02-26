@@ -130,6 +130,7 @@
 
     span[data-sb-field-path="title"] {
         @apply font-serif;
+        margin-left: .5em;
     }
 
     span[data-sb-field-path="title"] span {
