@@ -1,11 +1,11 @@
 {
-    "light": "#ffffff",
-    "dark": "#4A4A4A",
-    "neutral": "#E8E8EB",
-    "neutralAlt": "#DCDCDC",
+    "light": "#fdf8f4",
+    "dark": "#000000",
+    "neutral": "#f4d06f",
+    "neutralAlt": "#cde0dc",
     "primary": "#2a2a2a",
     "fontBody": "sans",
-    "fontHeadlines": "sans",
+    "fontHeadlines": "serif",
     "h1": {
         "size": "6xl",
         "weight": "normal",
@@ -15,7 +15,7 @@
         "type": "ThemeStyleHeading"
     },
     "h2": {
-        "size": "5xl",
+        "size": "4xl",
         "weight": "normal",
         "decoration": "none",
         "case": "none",
@@ -58,7 +58,7 @@
         "weight": "normal",
         "case": "none",
         "letterSpacing": "normal",
-        "borderRadius": "DEFAULT",
+        "borderRadius": "none",
         "shadow": "none",
         "horizontalPadding": 30,
         "verticalPadding": 12,
@@ -68,7 +68,7 @@
         "weight": "normal",
         "case": "none",
         "letterSpacing": "normal",
-        "borderRadius": "DEFAULT",
+        "borderRadius": "none",
         "shadow": "none",
         "horizontalPadding": 30,
         "verticalPadding": 12,
