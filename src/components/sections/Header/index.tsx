@@ -194,6 +194,8 @@ function MobileMenu(props) {
         const closeButton = document.querySelector('button[aria-label="Close Menu"]') as HTMLButtonElement | null;
         if (closeButton) {
           closeButton.focus();
+        } else {
+          console.error("Button with aria-label 'Close Menu' not found.");
         }
     };
 
@@ -203,6 +205,8 @@ function MobileMenu(props) {
         const openButton = document.querySelector('button[aria-label="Open Menu"]') as HTMLButtonElement | null;
         if (openButton) {
           openButton.focus();
+        } else {
+          console.error("Button with aria-label 'Open Menu' not found.");
         }
     };
 
