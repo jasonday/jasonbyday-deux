@@ -11,15 +11,15 @@
         },
         {
             "type": "SubNav",
-            "label": "Dropdown",
-            "altText": "Dropdown",
+            "label": "Menu",
+            "altText": "",
             "links": [
                 {
                     "type": "Link",
-                    "label": "Dropdown item",
+                    "label": "Blog",
                     "altText": "",
-                    "url": "/",
-                    "showIcon": false,
+                    "url": "/blog",
+                    "showIcon": true,
                     "icon": "arrowRight",
                     "iconPosition": "right",
                     "style": "secondary",
@@ -48,48 +48,7 @@
                     "elementId": ""
                 }
             ],
-            "labelStyle": "secondary"
-        },
-        {
-            "type": "SubNav",
-            "label": "Dropdown",
-            "altText": "Dropdown",
-            "links": [
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                },
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                },
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                }
-            ],
-            "labelStyle": "secondary"
+            "labelStyle": "primary"
         }
     ],
     "secondaryLinks": [
