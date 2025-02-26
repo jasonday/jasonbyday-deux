@@ -217,9 +217,10 @@ function MobileMenu(props) {
                 <MenuIcon className="w-6 h-6 fill-current" />
             </button>
         </div>
-        <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
+    <div className="ml-auto">
+         <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
                 <div className="flex flex-col min-h-full">
-{/*                     <div className="flex items-center justify-between mb-10">
+                    {/* <div className="flex items-center justify-between mb-10">
                         {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
                         <button aria-label="Close Menu" aria-expanded="true" title="Close Menu" className="p-2 -mr-1" onClick={closeMobileMenu}>
                             <CloseIcon className="w-6 h-6 fill-current" />
@@ -237,6 +238,7 @@ function MobileMenu(props) {
                     )}
                 </div>
             </div>
+        </div>
     );
 }
 
