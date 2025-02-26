@@ -191,15 +191,19 @@ function MobileMenu(props) {
     const openMobileMenu = () => {
         setIsMenuOpen(true);
         document.body.style.overflow = 'hidden';
-        const closeButton = document.querySelectorAll('button[aria-label="Close Menu"]') as HTMLElement;
-        closeButton.focus();
+        const closeButton = document.querySelector('button[aria-label="Close Menu"]') as HTMLButtonElement | null;
+        if (closeButton) {
+          closeButton.focus();
+        }
     };
 
     const closeMobileMenu = () => {
         setIsMenuOpen(false);
         document.body.style.overflow = 'unset';
-        const openButton = document.querySelectorAll('button[aria-label="Open Menu"]') as HTMLElement;
-        openButton.focus();
+        const openButton = document.querySelector('button[aria-label="Open Menu"]') as HTMLButtonElement | null;
+        if (openButton) {
+          openButton.focus();
+        }
     };
 
     useEffect(() => {
