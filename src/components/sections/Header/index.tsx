@@ -190,12 +190,12 @@ function MobileMenu(props) {
 
     const openMobileMenu = () => {
         setIsMenuOpen(true);
-        document.body.style.overflow = 'hidden';
+        //document.body.style.overflow = 'hidden';
     };
 
     const closeMobileMenu = () => {
         setIsMenuOpen(false);
-        document.body.style.overflow = 'unset';
+        //document.body.style.overflow = 'unset';
     };
 
     useEffect(() => {
@@ -212,18 +212,18 @@ function MobileMenu(props) {
 
     return (
         <div className="ml-auto lg:hidden">
-            <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
+{/*             <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
                 <span className="sr-only">Open Menu</span>
                 <MenuIcon className="w-6 h-6 fill-current" />
-            </button>
+            </button> */}
             <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
                 <div className="flex flex-col min-h-full">
-                    <div className="flex items-center justify-between mb-10">
+{/*                     <div className="flex items-center justify-between mb-10">
                         {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
                         <button aria-label="Close Menu" aria-expanded="true" title="Close Menu" className="p-2 -mr-1" onClick={closeMobileMenu}>
                             <CloseIcon className="w-6 h-6 fill-current" />
                         </button>
-                    </div>
+                    </div> */}
                     {primaryLinks.length > 0 && (
                         <ul {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                             <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
