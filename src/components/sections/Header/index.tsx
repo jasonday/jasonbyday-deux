@@ -212,10 +212,10 @@ function MobileMenu(props) {
 
     return (
         <div className="ml-auto lg:hidden">
-{/*             <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
+            <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
                 <span className="sr-only">Open Menu</span>
                 <MenuIcon className="w-6 h-6 fill-current" />
-            </button> */}
+            </button>
             <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
                 <div className="flex flex-col min-h-full">
 {/*                     <div className="flex items-center justify-between mb-10">
