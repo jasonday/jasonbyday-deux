@@ -62,12 +62,12 @@ function HeaderLogoLeftPrimaryLeft(props) {
                 </div>
             )}
             {primaryLinks.length > 0 && (
-                <ul className="hidden mr-10 gap-x-10 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                <ul className="mr-10 gap-x-10 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
             {secondaryLinks.length > 0 && (
-                <ul className="hidden ml-auto gap-x-2.5 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
+                <ul className="ml-auto gap-x-2.5 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
@@ -87,14 +87,14 @@ function HeaderLogoLeftPrimaryCentered(props) {
             )}
             {primaryLinks.length > 0 && (
                 <ul
-                    className="absolute hidden w-auto -translate-x-1/2 -translate-y-1/2 lg:flex lg:items-center gap-x-10 left-1/2 top-1/2"
+                    className="absolute w-auto -translate-x-1/2 -translate-y-1/2 lg:flex lg:items-center gap-x-10 left-1/2 top-1/2"
                     {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}
                 >
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
             {secondaryLinks.length > 0 && (
-                <ul className="hidden lg:flex lg:items-center ml-auto gap-x-2.5" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
+                <ul className="lg:flex lg:items-center ml-auto gap-x-2.5" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
