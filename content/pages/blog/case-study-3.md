@@ -8,8 +8,7 @@ excerpt: >-
   Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem
   pellentesque fermentum. Sed in facilisis dui.
 featuredImage:
-  url: >-
-    /images/img-placeholder.svg
+  url: /images/img-placeholder.svg
   altText: Case study 3
   styles:
     self:
@@ -87,6 +86,7 @@ styles:
     borderRadius: none
     flexDirection: col
 type: PostLayout
+author: content/data/jason-day.json
 ---
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor.
