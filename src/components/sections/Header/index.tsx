@@ -57,7 +57,7 @@ function HeaderLogoLeftPrimaryLeft(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10 md:w-full">
+                <div className="mr-10 ">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
@@ -81,7 +81,7 @@ function HeaderLogoLeftPrimaryCentered(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10 md:w-full">
+                <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
@@ -108,7 +108,7 @@ function HeaderLogoLeftPrimaryRight(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10 md:w-full">
+                <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
