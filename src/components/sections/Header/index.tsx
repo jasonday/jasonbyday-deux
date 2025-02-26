@@ -71,7 +71,7 @@ function HeaderLogoLeftPrimaryLeft(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+            {/* {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />} */}
         </div>
     );
 }
@@ -98,7 +98,7 @@ function HeaderLogoLeftPrimaryCentered(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+           {/* {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />} */}
         </div>
     );
 }
@@ -125,7 +125,7 @@ function HeaderLogoLeftPrimaryRight(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+            {/* {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />} */}
         </div>
     );
 }
@@ -169,7 +169,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
                         <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                     </ul>
                 )}
-                {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+               {/* {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />} */}
             </div>
             {primaryLinks.length > 0 && (
                 <ul
