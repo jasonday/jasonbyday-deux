@@ -12,6 +12,7 @@ topSections:
     posts:
       - content/pages/blog/accessibility-theater.md
       - content/pages/blog/accessibility-theater.md
+      - content/pages/blog/accessibility-theater.md
     showThumbnail: true
     showExcerpt: true
     showDate: true
