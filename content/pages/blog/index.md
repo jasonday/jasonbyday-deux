@@ -37,6 +37,7 @@ seo:
     and design.
   socialImage: /images/img-placeholder.svg
   type: Seo
+  addTitleSuffix: true
 type: PostFeedLayout
 bottomSections: []
 postFeed:
