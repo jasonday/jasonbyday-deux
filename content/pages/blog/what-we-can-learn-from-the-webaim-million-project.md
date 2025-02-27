@@ -44,10 +44,14 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
-  addTitleSuffix: false
+  metaTitle: ''
+  metaDescription: >-
+    Key takeaways you can glean from 2024's WebAIM Million Project report.
+    Ultimately, WebAIM posited "pages with fewer errors have gotten better while
+    pages with many errors have gotten worse."
+  addTitleSuffix: true
   metaTags: []
+  socialImage: /images/hurdles.jpg
 colors: bg-light-fg-dark
 styles:
   self:
