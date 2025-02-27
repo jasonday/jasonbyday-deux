@@ -188,14 +188,18 @@ function MobileMenu(props) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
 
-    const openMobileMenu = () => {
-        setIsMenuOpen(true);
-        //document.body.style.overflow = 'hidden';
-    };
+    // const openMobileMenu = () => {
+    //     setIsMenuOpen(true);
+    //     //document.body.style.overflow = 'hidden';
+    // };
 
-    const closeMobileMenu = () => {
-        setIsMenuOpen(false);
-        //document.body.style.overflow = 'unset';
+    // const closeMobileMenu = () => {
+    //     setIsMenuOpen(false);
+    //     //document.body.style.overflow = 'unset';
+    // };
+
+    const toggleMobileMenu = () => {
+      setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
     };
 
     useEffect(() => {
@@ -213,7 +217,7 @@ function MobileMenu(props) {
     return (
         <>
         <div className="ml-auto lg:hidden">
-            <button aria-label="Open Menu" aria-expanded={isMenuOpen} title="Open Menu" className="p-2 -mr-1n flex" onClick={openMobileMenu}>
+            <button aria-label="Open Menu" aria-expanded={isMenuOpen} title="Open Menu" className="p-2 -mr-1n flex" onClick={toggleMobileMenu}>
                 <MenuIcon className="w-6 h-6 fill-current" />
                 <span class="pl-2">Menu</span>
             </button>
