@@ -7,7 +7,7 @@ excerpt: >-
   Donec sed facilisis nibh.
 featuredImage:
   type: ImageBlock
-  url: /images/abstract-feature1.svg
+  url: /images/robot-widget.png
   altText: Thumbnail
   elementId: ''
   styles:
