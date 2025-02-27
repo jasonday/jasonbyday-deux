@@ -51,6 +51,7 @@ seo:
     better while pages with many errors have gotten worse."
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/hurdles.jpg
 colors: bg-light-fg-dark
 styles:
   self:
