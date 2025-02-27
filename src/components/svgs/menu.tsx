@@ -6,10 +6,10 @@ export default function Menu({ className, dynamicAttributes, ...props }) {
             <path d="M1.695 18.625v-1.767h20.611v1.767zM1.695 12.883v-1.767h20.611v1.767zM1.695 7.142v-1.767h20.611v1.767z"></path>
         </svg>
 
-        <div className="menu-hamburger">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+        <div className={className}">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
     );
 }
