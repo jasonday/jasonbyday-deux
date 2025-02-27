@@ -5,8 +5,8 @@ title: >-
   Project
 date: '2025-02-20'
 excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+  "pages with fewer errors have gotten better while pages with many errors have
+  gotten worse."
 bottomSections:
   - type: DividerSection
     title: Divider
