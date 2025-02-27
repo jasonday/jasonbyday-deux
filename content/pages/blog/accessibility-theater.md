@@ -64,6 +64,8 @@ styles:
     flexDirection: col
 author: content/data/jason-day.json
 ---
+![a broken robot, badged with the universal design logo, electricity crackling and smoke rising from it saying 'install me'](/images/robot-widget.png)
+
 A play in three acts
 
 ## Characters
@@ -81,8 +83,6 @@ A play in three acts
 *   THE GHOST OF ACCESSIBILITY PAST: A spectral figure representing early web accessibility efforts
 
 *   WIDGET: A personified accessibility overlay widget
-
-
 
 ## Act I: The Promise
 
@@ -105,8 +105,6 @@ WIDGET: *(mechanical voice)* I can change fonts! Adjust contrast! Read text alou
 WEBSITE OWNER: Does this really work?
 
 OVERLAY VENDOR: Trust me. Automation is the future! Why waste time and money when you can have instant results?
-
-
 
 ## Act II: The Reality
 
@@ -152,8 +150,6 @@ OVERLAY VENDOR: *(backing away)* But our AI... our automation... our one line of
 
 MARCUS: Real accessibility takes work. Human work. Good design, proper coding, and actual user testing. There are no shortcuts.
 
-
-
 ## Epilogue
 
 *\[All characters face the audience]*
@@ -167,8 +163,5 @@ WEBSITE OWNER: *(removing the overlay code)* We have to do this the right way.
 CHORUS OF USERS: *(together)* No more theater. No more overlays. Just thoughtful, accessible design.
 
 \[End]
-
-
-
 
 Get more info at [overlayfactsheet.com](https://overlayfactsheet.com/)
