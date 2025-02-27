@@ -76,6 +76,8 @@ The numbers are stark: across one million home pages, researchers detected over 
 
 While the scope of accessibility issues might seem overwhelming, the data reveals that 96.4% of detected errors fall into just six categories:
 
+![Chart identifying most prevalent wcag failures](/images/webaim-graph.png)
+
 WCAG 2.1 Failure Types Prevalence, results via WAVE
 
 1.  [Low contrast text](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) (81.0% of home pages)
