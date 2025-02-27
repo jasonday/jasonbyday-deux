@@ -64,10 +64,111 @@ styles:
     flexDirection: col
 author: content/data/jason-day.json
 ---
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
+A play in three acts
 
-> Vestibulum ullamcorper risus auctor eleifend consequat.
+## Characters
 
-In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+*   WEBSITE OWNER: A well-meaning but uninformed business owner
 
-Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+*   OVERLAY VENDOR: A smooth-talking sales rep
+
+*   ANGELA: A blind screen reader user
+
+*   MARCUS: A web developer with accessibility expertise
+
+*   CHORUS OF USERS: Various people with disabilities
+
+*   THE GHOST OF ACCESSIBILITY PAST: A spectral figure representing early web accessibility efforts
+
+*   WIDGET: A personified accessibility overlay widget
+
+
+
+## Act I: The Promise
+
+*Scene: A modern office. WEBSITE OWNER sits at their desk, looking worried over their desk*
+
+WEBSITE OWNER: *(reviewing papers)* These accessibility requirements... the lawsuits... the costs... What am I supposed to do?
+
+*( OVERLAY VENDOR appears in a cloud of smoke wearing a flashy suit with a glowing "Install Now" button as a tie pin)*
+
+OVERLAY VENDOR: Did someone say accessibility? Fear not! With just one line of code, I can make all your problems disappear!
+
+WEBSITE OWNER: One line of code? That sounds too good to be true!
+
+OVERLAY VENDOR: *(grandly)* Watch this! *(waves a wand)* This little beauty, powered by cutting-edge AI, fixes everything. Fonts, contrast, screen reader compatibility – you name it!
+
+*\[A glowing widget appears on the stage]*
+
+WIDGET: *(mechanical voice)* I can change fonts! Adjust contrast! Read text aloud! I am the future of accessibility!
+
+WEBSITE OWNER: Does this really work?
+
+OVERLAY VENDOR: Trust me. Automation is the future! Why waste time and money when you can have instant results?
+
+
+
+## Act II: The Reality
+
+*Scene: A small office. ANGELA sits at her computer, trying to use the website.*
+
+ANGELA: *(frustrated)* Ugh, another one of these things? “This site is now accessible!” Yeah, right. I can’t even find the damn menu. My screen reader’s going haywire.
+
+CHORUS OF USERS: *(entering from all sides, voices overlapping)* “I already have my own tools!”**,** “This widget’s blocking everything!”, “It’s making things worse!”, “And it's tracking my data?”
+
+*\[WIDGET starts glitching]*
+
+WIDGET: *(stuttering)* Detecting... detecting... user preferences... Would you like to... Would you like to... Would you like to...
+
+*(Enter THE GHOST OF ACCESSIBILITY PAST)*
+
+GHOST: Remember when we said accessibility should be built in, not bolted on? When we wrote the WCAG guidelines way back in 1999? When we emphasized user testing? Remember...?
+
+## Act III: The Awakening
+
+*Scene: Back in WEBSITE OWNER's office. WEBSITE OWNER is meeting with MARCUS.*
+
+MARCUS: The overlay can't fix most issues. It can't reliably repair:
+
+*   Image descriptions
+
+*   Form labels
+
+*   Keyboard navigation
+
+*   Complex interactive components
+
+*   PDFs, documents, or media files
+
+WEBSITE OWNER: But the vendor promised compliance!
+
+*\[CHORUS OF USERS returns, each holding up their phones and laptops]*
+
+CHORUS OF USERS: "We've started blocking these overlays!" "They collect our disability status without consent!" "They slow down pages!" "They break the tools we use!"
+
+WEBSITE OWNER: *(to OVERLAY VENDOR)* You promised a solution, but it's all theater – a mere illusion of accessibility!
+
+OVERLAY VENDOR: *(backing away)* But our AI... our automation... our one line of code...
+
+MARCUS: Real accessibility takes work. Human work. Good design, proper coding, and actual user testing. There are no shortcuts.
+
+
+
+## Epilogue
+
+*\[All characters face the audience]*
+
+ANGELA: True accessibility inclusion doesn’t come from an overlay.
+
+MARCUS: It's a fundamental right.
+
+WEBSITE OWNER: *(removing the overlay code)* We have to do this the right way.
+
+CHORUS OF USERS: *(together)* No more theater. No more overlays. Just thoughtful, accessible design.
+
+\[End]
+
+
+
+
+Get more info at [overlayfactsheet.com](https://overlayfactsheet.com/)
