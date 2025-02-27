@@ -50,8 +50,7 @@ seo:
     Ultimately, WebAIM posited "pages with fewer errors have gotten better while
     pages with many errors have gotten worse."
   addTitleSuffix: true
-  metaTags:
-    - type: MetaTag
+  metaTags: []
   socialImage: /images/hurdles.jpg
 colors: bg-light-fg-dark
 styles:
