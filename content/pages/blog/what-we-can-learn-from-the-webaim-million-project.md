@@ -57,6 +57,7 @@ styles:
   self:
     flexDirection: col
     borderRadius: none
+    borderColor: border-dark
 author: content/data/jason-day.json
 featuredImage:
   type: ImageBlock
