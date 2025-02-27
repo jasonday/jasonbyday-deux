@@ -64,6 +64,7 @@ styles:
       - pl-4
       - pb-4
       - pr-4
+    borderStyle: solid
 author: content/data/jason-day.json
 featuredImage:
   type: ImageBlock
