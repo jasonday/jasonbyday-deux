@@ -75,6 +75,7 @@ styles:
     borderColor: border-dark
     borderRadius: none
     borderWidth: 2
+    borderStyle: solid
 author: content/data/jason-day.json
 ---
 ![a broken robot, badged with the universal design logo, electricity crackling and smoke rising from it saying 'install me'](/images/robot-widget.png)
