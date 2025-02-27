@@ -47,7 +47,7 @@ export function seoGenerateTitle(page, site) {
 export function seoGenerateMetaDescription(page, site) {
     let metaDescription = null;
     // Blog posts use the exceprt as the default meta description
-    if (page.__metadata.modelName === 'PostLayout') {
+    if (page.__metadata?.modelName === 'PostLayout' && page.excerpt) {
         metaDescription = page.excerpt;
     }
     // page metaDescription field overrides all others
