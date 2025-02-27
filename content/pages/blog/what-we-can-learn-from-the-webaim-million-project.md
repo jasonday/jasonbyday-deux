@@ -56,7 +56,7 @@ author: content/data/jason-day.json
 featuredImage:
   type: ImageBlock
   url: /images/hurdles.jpg
-  altText: Image alt text placeholder
+  altText: 'Three hurdles standing in the way of the flag, or objective'
   elementId: ''
   styles:
     self:
