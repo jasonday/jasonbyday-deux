@@ -1,45 +1,15 @@
 {
     "primaryLinks": [
         {
-            "type": "SubNav",
-            "label": "Menu",
+            "type": "Link",
+            "label": "Blog",
             "altText": "",
-            "links": [
-                {
-                    "type": "Link",
-                    "label": "Blog",
-                    "altText": "",
-                    "url": "/blog",
-                    "showIcon": false,
-                    "icon": "chevronRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                },
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                },
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                }
-            ],
-            "labelStyle": "primary"
+            "url": "/blog",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "primary",
+            "elementId": ""
         }
     ],
     "secondaryLinks": [
