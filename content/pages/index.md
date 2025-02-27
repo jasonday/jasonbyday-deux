@@ -51,7 +51,8 @@ sections:
           - pl-16
           - pb-16
           - pr-16
-  - posts: []
+  - posts:
+      - content/pages/blog/what-we-can-learn-from-the-webaim-million-project.md
     showThumbnail: true
     showDate: true
     showAuthor: true

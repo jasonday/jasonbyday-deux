@@ -56,6 +56,15 @@ colors: bg-light-fg-dark
 styles:
   self:
     flexDirection: col
+    borderRadius: none
+    borderColor: border-dark
+    borderWidth: 2
+    padding:
+      - pt-4
+      - pl-4
+      - pb-4
+      - pr-4
+    borderStyle: solid
 author: content/data/jason-day.json
 featuredImage:
   type: ImageBlock
@@ -64,7 +73,7 @@ featuredImage:
   elementId: ''
   styles:
     self:
-      borderRadius: medium
+      borderRadius: none
 ---
 ![three hurdles standing in the way of the flag/objective](/images/hurdles.jpg)
 
