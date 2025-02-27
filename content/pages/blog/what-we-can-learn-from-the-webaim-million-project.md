@@ -62,6 +62,8 @@ featuredImage:
     self:
       borderRadius: medium
 ---
+![three hurdles standing in the way of the flag/objective](/images/hurdles.jpg)
+
 In an increasingly digital world, web accessibility isn't just a nice-to-have, it's a necessity. For six consecutive years, WebAIM, a non-profit with a focus on digital accessibility, has conducted comprehensive evaluations of the top one million websites' home pages. Their [2024 WebAIM Million Project](https://webaim.org/projects/million/) report paints a concerning picture of the current state of web accessibility, while also offering valuable insights into potential improvements.
 
 Note: WebAIM typically publishes the report in February or March, so we should be able to view the 2025 results soon. For the sake of this article, I am using the 2024 report.
@@ -73,13 +75,6 @@ The numbers are stark: across one million home pages, researchers detected over 
 ## The Most Common Barriers
 
 While the scope of accessibility issues might seem overwhelming, the data reveals that 96.4% of detected errors fall into just six categories:
-
-<figure>
-  <img
-    src="stackbit_asset_id:static:public/images/webaim-graph.png"
-    alt="chart, WCAG 2.1 top failure types" />
-  <figcaption>WCAG 2.1 Failure Types Prevalence, results via WAVE</figcaption>
-</figure>
 
 WCAG 2.1 Failure Types Prevalence, results via WAVE
 
