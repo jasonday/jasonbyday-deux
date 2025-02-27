@@ -4,5 +4,6 @@
     "titleSuffix": "Jason Day",
     "defaultSocialImage": "/images/main-hero.jpg",
     "type": "Config",
-    "header": "content/data/header.json"
+    "header": "content/data/header.json",
+    "enableAnnotations": true
 }
