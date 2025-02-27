@@ -140,9 +140,27 @@
             margin-left: -3px;
         }
 
-        button[aria-label="Open Menu"][aria-expanded="true"] svg {
-            transform: rotate(90deg);
+         .line {
+            @apply bg-dark;
+            height: 1em;
+            width: 3em;
+            margin: 5px auto;
         }
+
+        button[aria-label="Open Menu"][aria-expanded="true"] {
+            > div {
+                .line:nth-child(1) {
+                  transform: rotate(45deg) translate(12px, 12px);
+                }
+                .line:nth-child(2) {
+                  visibility: hidden;
+                }
+                .line:nth-child(3) {
+                  transform: rotate(-45deg) translate(15px, -16px);
+                }
+            }
+        }
+
     }
    
 
