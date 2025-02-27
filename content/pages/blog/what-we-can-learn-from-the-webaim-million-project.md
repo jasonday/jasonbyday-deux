@@ -53,6 +53,14 @@ styles:
   self:
     flexDirection: col
 author: content/data/jason-day.json
+featuredImage:
+  type: ImageBlock
+  url: /images/hero2.svg
+  altText: Image alt text placeholder
+  elementId: ''
+  styles:
+    self:
+      borderRadius: medium
 ---
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
 
