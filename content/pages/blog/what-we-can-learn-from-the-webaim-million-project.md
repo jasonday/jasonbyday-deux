@@ -73,7 +73,7 @@ featuredImage:
   elementId: ''
   styles:
     self:
-      borderRadius: medium
+      borderRadius: none
 ---
 ![three hurdles standing in the way of the flag/objective](/images/hurdles.jpg)
 
