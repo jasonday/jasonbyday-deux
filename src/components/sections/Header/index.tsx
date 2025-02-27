@@ -219,7 +219,7 @@ function MobileMenu(props) {
         <div className="ml-auto lg:hidden">
             <button aria-expanded={isMenuOpen} className="p-2 -mr-1n flex" onClick={toggleMobileMenu}>
                 <MenuIcon className="w-6 h-6 fill-current" dynamicAttributes={{ 'aria-hidden': 'true' }}/>
-                <span class="pl-2">Menu</span>
+                <span className="pl-2">Menu</span>
             </button>
         </div>
         <div className="ml-auto basis-full ">
