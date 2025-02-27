@@ -123,22 +123,46 @@
         }
     }
 
-    /* header */
-    #logo {
-        @apply w-12;
-    }
+    header {
+         #logo {
+            @apply w-12;
+        }
+    
+        span[data-sb-field-path="title"] {
+            @apply font-serif;
+            margin-left: .5em;
+        }
+    
+        span[data-sb-field-path="title"] span {
+            text-transform: lowercase;
+            font-style: italic;
+            font-size: .9em;
+            margin-left: -3px;
+        }
 
-    span[data-sb-field-path="title"] {
-        @apply font-serif;
-        margin-left: .5em;
-    }
+         .line {
+            @apply bg-dark;
+            height: .2em;
+            width: 1.5em;
+            margin: 2px auto 4px;
+        }
 
-    span[data-sb-field-path="title"] span {
-        text-transform: lowercase;
-        font-style: italic;
-        font-size: .9em;
-        margin-left: -3px;
+        button[aria-expanded="true"] {
+            > div {
+                .line:nth-child(1) {
+                  transform: translateX(0) translateY(8px) rotate(45deg);
+                }
+                .line:nth-child(2) {
+                  visibility: hidden;
+                }
+                .line:nth-child(3) {
+                  transform: translateX(0) translateY(-6px) rotate(-45deg);
+                }
+            }
+        }
+
     }
+   
 
 
     /* Buttons */

@@ -55,7 +55,7 @@ function HeaderVariants(props) {
 function HeaderLogoLeftPrimaryLeft(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -79,7 +79,7 @@ function HeaderLogoLeftPrimaryLeft(props) {
 function HeaderLogoLeftPrimaryCentered(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -106,7 +106,7 @@ function HeaderLogoLeftPrimaryCentered(props) {
 function HeaderLogoLeftPrimaryRight(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -133,7 +133,7 @@ function HeaderLogoLeftPrimaryRight(props) {
 function HeaderLogoCenteredPrimaryLeft(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
-        <div className="relative flex items-center">
+        <div className="relative flex flex-wrap items-center">
             {(title || logo?.url) && (
                 <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -158,7 +158,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
     const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
     return (
         <>
-            <div className="relative flex items-center">
+            <div className="relative flex flex-wrap items-center">
                 {(title || logo?.url) && (
                     <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
                         <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
@@ -188,20 +188,24 @@ function MobileMenu(props) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
 
-    const openMobileMenu = () => {
-        setIsMenuOpen(true);
-        document.body.style.overflow = 'hidden';
-    };
+    // const openMobileMenu = () => {
+    //     setIsMenuOpen(true);
+    //     //document.body.style.overflow = 'hidden';
+    // };
 
-    const closeMobileMenu = () => {
-        setIsMenuOpen(false);
-        document.body.style.overflow = 'unset';
+    // const closeMobileMenu = () => {
+    //     setIsMenuOpen(false);
+    //     //document.body.style.overflow = 'unset';
+    // };
+
+    const toggleMobileMenu = () => {
+      setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
     };
 
     useEffect(() => {
         const handleRouteChange = () => {
             setIsMenuOpen(false);
-            document.body.style.overflow = 'unset';
+            //document.body.style.overflow = 'unset';
         };
         router.events.on('routeChangeStart', handleRouteChange);
 
@@ -211,32 +215,36 @@ function MobileMenu(props) {
     }, [router.events]);
 
     return (
+        <>
         <div className="ml-auto lg:hidden">
-            <button aria-label="Open Menu" aria-expanded="false" title="Open Menu" className="p-2 -mr-1" onClick={openMobileMenu}>
-                <span className="sr-only">Open Menu</span>
-                <MenuIcon className="w-6 h-6 fill-current" />
+            <button aria-expanded={isMenuOpen} className="p-2 -mr-1n flex" onClick={toggleMobileMenu}>
+                <MenuIcon className="w-6 h-6 fill-current" dynamicAttributes={{ 'aria-hidden': 'true' }}/>
+                <span className="pl-2">Menu</span>
             </button>
-            <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
-                <div className="flex flex-col min-h-full">
-                    <div className="flex items-center justify-between mb-10">
-                        {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
-                        <button aria-label="Close Menu" aria-expanded="true" title="Close Menu" className="p-2 -mr-1" onClick={closeMobileMenu}>
-                            <CloseIcon className="w-6 h-6 fill-current" />
-                        </button>
+        </div>
+        <div className="ml-auto basis-full ">
+             <div className={classNames(colors, styles?.self?.padding ?? 'p-4', isMenuOpen ? 'block' : 'hidden')}>
+                    <div className="flex flex-col min-h-full">
+                        {/* <div className="flex items-center justify-between mb-10">
+                            {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
+                            <button aria-label="Close Menu" aria-expanded="true" title="Close Menu" className="p-2 -mr-1" onClick={closeMobileMenu}>
+                                <CloseIcon className="w-6 h-6 fill-current" />
+                            </button>
+                        </div> */}
+                        {primaryLinks.length > 0 && (
+                            <ul {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                                <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
+                            </ul>
+                        )}
+                        {secondaryLinks.length > 0 && (
+                            <ul {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
+                                <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
+                            </ul>
+                        )}
                     </div>
-                    {primaryLinks.length > 0 && (
-                        <ul {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
-                            <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
-                        </ul>
-                    )}
-                    {secondaryLinks.length > 0 && (
-                        <ul {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
-                            <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
-                        </ul>
-                    )}
                 </div>
             </div>
-        </div>
+            </>
     );
 }
 
