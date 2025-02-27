@@ -67,6 +67,7 @@ seo:
     a facade of accessibility that ultimately fails those it claims to serve.
   addTitleSuffix: true
   metaTags: []
+  socialImage: /images/robot-widget.png
 colors: bg-light-fg-dark
 styles:
   self:
