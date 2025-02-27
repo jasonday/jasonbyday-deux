@@ -147,7 +147,7 @@
             margin: 2px auto 4px;
         }
 
-        button[aria-label="Open Menu"][aria-expanded="true"] {
+        button[aria-expanded="true"] {
             > div {
                 .line:nth-child(1) {
                   transform: translateX(0) translateY(8px) rotate(45deg);
