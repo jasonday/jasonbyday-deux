@@ -8,7 +8,9 @@ excerpt: >-
 featuredImage:
   type: ImageBlock
   url: /images/robot-widget.png
-  altText: Thumbnail
+  altText: >-
+    a broken robot, badged with the universal design logo, electricity crackling
+    and smoke rising from it saying 'install me'
   elementId: ''
   styles:
     self:
