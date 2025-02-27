@@ -1,47 +1,6 @@
 {
     "primaryLinks": [
         {
-            "type": "SubNav",
-            "label": "Menu",
-            "altText": "",
-            "links": [
-                {
-                    "type": "Link",
-                    "label": "Blog",
-                    "altText": "",
-                    "url": "/blog",
-                    "showIcon": false,
-                    "icon": "chevronRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                },
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                },
-                {
-                    "type": "Link",
-                    "label": "Dropdown item",
-                    "altText": "",
-                    "url": "/",
-                    "showIcon": false,
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "elementId": ""
-                }
-            ],
-            "labelStyle": "primary"
-        },
-        {
             "type": "Link",
             "label": "Blog",
             "altText": "",
