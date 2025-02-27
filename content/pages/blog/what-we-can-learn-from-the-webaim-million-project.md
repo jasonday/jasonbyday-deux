@@ -46,9 +46,9 @@ seo:
   type: Seo
   metaTitle: ''
   metaDescription: >-
-    lorem-ipsumKey takeaways you can glean from 2024's WebAIM Million Project
-    report. Ultimately, WebAIM posited "pages with fewer errors have gotten
-    better while pages with many errors have gotten worse."
+    Key takeaways you can glean from 2024's WebAIM Million Project report.
+    Ultimately, WebAIM posited "pages with fewer errors have gotten better while
+    pages with many errors have gotten worse."
   addTitleSuffix: true
   metaTags:
     - type: MetaTag
