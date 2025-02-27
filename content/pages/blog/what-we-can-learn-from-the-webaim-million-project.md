@@ -59,6 +59,11 @@ styles:
     borderRadius: none
     borderColor: border-dark
     borderWidth: 2
+    padding:
+      - pt-4
+      - pl-4
+      - pb-4
+      - pr-4
 author: content/data/jason-day.json
 featuredImage:
   type: ImageBlock
