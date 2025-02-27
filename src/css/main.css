@@ -142,21 +142,21 @@
 
          .line {
             @apply bg-dark;
-            height: 1em;
-            width: 3em;
-            margin: 5px auto;
+            height: .2em;
+            width: 1.5em;
+            margin: 2px auto 4px;
         }
 
         button[aria-label="Open Menu"][aria-expanded="true"] {
             > div {
                 .line:nth-child(1) {
-                  transform: rotate(45deg) translate(12px, 12px);
+                  transform: translateX(0) translateY(8px) rotate(45deg);
                 }
                 .line:nth-child(2) {
                   visibility: hidden;
                 }
                 .line:nth-child(3) {
-                  transform: rotate(-45deg) translate(15px, -16px);
+                  transform: translateX(0) translateY(-6px) rotate(-45deg);
                 }
             }
         }
