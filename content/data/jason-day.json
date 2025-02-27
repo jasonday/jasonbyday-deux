@@ -17,6 +17,7 @@
         }
     },
     "colors": "bg-light-fg-dark",
+    "elementId": null,
     "styles": {
         "self": {
             "padding": [
