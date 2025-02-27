@@ -123,22 +123,28 @@
         }
     }
 
-    /* header */
-    #logo {
-        @apply w-12;
-    }
+    header {
+         #logo {
+            @apply w-12;
+        }
+    
+        span[data-sb-field-path="title"] {
+            @apply font-serif;
+            margin-left: .5em;
+        }
+    
+        span[data-sb-field-path="title"] span {
+            text-transform: lowercase;
+            font-style: italic;
+            font-size: .9em;
+            margin-left: -3px;
+        }
 
-    span[data-sb-field-path="title"] {
-        @apply font-serif;
-        margin-left: .5em;
+        button[aria-label="Open Menu"][aria-expanded="true"] svg {
+            transform: rotate(90deg);
+        }
     }
-
-    span[data-sb-field-path="title"] span {
-        text-transform: lowercase;
-        font-style: italic;
-        font-size: .9em;
-        margin-left: -3px;
-    }
+   
 
 
     /* Buttons */
