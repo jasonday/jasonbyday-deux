@@ -9,8 +9,7 @@ topSections:
       color: text-dark
       type: TitleBlock
     subtitle: This is the subtitle
-    posts:
-      - content/pages/blog/accessibility-theater.md
+    posts: []
     showThumbnail: true
     showExcerpt: true
     showDate: true
