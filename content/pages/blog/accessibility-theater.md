@@ -72,6 +72,7 @@ colors: bg-light-fg-dark
 styles:
   self:
     flexDirection: col
+    borderColor: border-dark
 author: content/data/jason-day.json
 ---
 ![a broken robot, badged with the universal design logo, electricity crackling and smoke rising from it saying 'install me'](/images/robot-widget.png)
