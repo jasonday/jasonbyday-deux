@@ -56,6 +56,7 @@ colors: bg-light-fg-dark
 styles:
   self:
     flexDirection: col
+    borderRadius: none
 author: content/data/jason-day.json
 featuredImage:
   type: ImageBlock
