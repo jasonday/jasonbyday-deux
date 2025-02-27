@@ -213,7 +213,7 @@ function MobileMenu(props) {
     return (
         <>
         <div className="ml-auto lg:hidden">
-            <button aria-label="Open Menu" aria-expanded="{(isMenuOpen ? 'false' : 'true')}" title="Open Menu" className="p-2 -mr-1n flex" onClick={openMobileMenu}>
+            <button aria-label="Open Menu" aria-expanded={isMenuOpen} title="Open Menu" className="p-2 -mr-1n flex" onClick={openMobileMenu}>
                 <MenuIcon className="w-6 h-6 fill-current" />
                 <span class="pl-2">Menu</span>
             </button>
