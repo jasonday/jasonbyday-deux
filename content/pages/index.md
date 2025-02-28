@@ -68,7 +68,7 @@ sections:
           - pr-16
         justifyContent: center
     type: FeaturedPostsSection
-    hoverEffect: shadow
+    hoverEffect: thin-underline
   - title:
       text: Generic Section With A Form
       color: text-dark
