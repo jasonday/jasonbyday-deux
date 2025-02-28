@@ -3,8 +3,13 @@ type: PostLayout
 title: 'Accessibility Theater: The Cautionary Tale of Overlays'
 date: '2025-02-24'
 excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+  Good evening, and welcome to Masterpiece Digital Theater. Tonight we present a
+  compelling drama that explores the world of digital accessibility - or rather,
+  its charlatan counterfeits. "Accessibility Theater: The Cautionary Tale of
+  Overlays" takes us into the modern boardrooms and living rooms where the drama
+  of digital inclusion, or exclusion, plays out daily. Our story examines how
+  not-so-well intentioned solutions can become mere performance, a facade of
+  accessibility that ultimately fails those it claims to serve.
 featuredImage:
   type: ImageBlock
   url: /images/robot-widget.png

@@ -8,9 +8,9 @@ topSections:
       text: Featured Post
       color: text-dark
       type: TitleBlock
-    subtitle: This is the subtitle
+    subtitle: ''
     posts:
-      - content/pages/blog/top-ten-lessons-we-learned.md
+      - content/pages/blog/accessibility-theater.md
     showThumbnail: true
     showExcerpt: true
     showDate: true
@@ -31,12 +31,13 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Blog - Demo site
+  metaTitle: ''
   metaDescription: >-
     This is the blog of the demo site where we post about technology, product,
     and design.
   socialImage: /images/img-placeholder.svg
   type: Seo
+  addTitleSuffix: true
 type: PostFeedLayout
 bottomSections: []
 postFeed:
@@ -52,4 +53,5 @@ postFeed:
   variant: three-col-grid
   colors: bg-light-fg-dark
   hoverEffect: move-up
+isDraft: false
 ---
