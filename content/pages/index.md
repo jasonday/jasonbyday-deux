@@ -57,7 +57,7 @@ sections:
     showThumbnail: true
     showDate: true
     showAuthor: true
-    variant: three-col-grid
+    variant: two-col-grid
     colors: bg-light-fg-dark
     styles:
       self:
@@ -68,7 +68,36 @@ sections:
           - pr-16
         justifyContent: center
     type: FeaturedPostsSection
-    hoverEffect: move-up
+    hoverEffect: thick-underline
+    title:
+      type: TitleBlock
+      text: Featured Posts
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+    subtitle: ''
+  - type: RecentPostsSection
+    title:
+      type: TitleBlock
+      text: Recent posts
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+    recentCount: 3
+    showThumbnail: true
+    showExcerpt: true
+    showDate: true
+    showAuthor: true
+    actions: []
+    elementId: ''
+    variant: three-col-grid
+    colors: bg-light-fg-dark
+    hoverEffect: thin-underline
+    styles:
+      self:
+        justifyContent: center
   - title:
       text: Generic Section With A Form
       color: text-dark
