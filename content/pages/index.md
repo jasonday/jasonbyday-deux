@@ -71,7 +71,7 @@ sections:
     hoverEffect: thick-underline
     title:
       type: TitleBlock
-      text: This Is A Big Headline
+      text: Featured Posts
       color: text-dark
   - type: RecentPostsSection
     title:
