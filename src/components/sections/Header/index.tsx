@@ -19,7 +19,8 @@ export default function Header(props) {
                 'sb-component-header',
                 colors,
                 'relative',
-                'shadow-header',
+                'border-b',
+                'border-dark',
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
                 styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'p-4',
                 'z-50'
@@ -216,7 +217,7 @@ function MobileMenu(props) {
 
     return (
         <>
-        <div className="ml-auto lg:hidden">
+        <div className="ml-auto mt-4 lg:hidden">
             <button aria-expanded={isMenuOpen} className="p-2 -mr-1n flex" onClick={toggleMobileMenu}>
                 <MenuIcon className="w-6 h-6 fill-current" dynamicAttributes={{ 'aria-hidden': 'true' }}/>
                 <span className="pl-2">Menu</span>
@@ -282,7 +283,7 @@ function ListOfLinks(props) {
                     return (
                         <li
                             key={index}
-                            className={classNames(inMobileMenu ? 'border-t' : 'py-2', {
+                            className={classNames(inMobileMenu ? 'border-t border-dark' : 'py-2', {
                                 'py-4': inMobileMenu && link.__metadata.modelName === 'Button'
                             })}
                         >
@@ -364,7 +365,7 @@ function LinkWithSubnav(props) {
                 <ul
                     className={classNames(
                         colors,
-                        inMobileMenu ? 'p-4 space-y-3' : 'absolute top-full left-0 w-44 border-t border-primary shadow-header z-10 px-6 pt-5 pb-6 space-y-4',
+                        inMobileMenu ? 'p-4 space-y-3' : 'absolute top-full left-0 w-44 border-t border-primary z-10 px-6 pt-5 pb-6 space-y-4',
                         isSubNavOpen ? 'block' : 'hidden'
                     )}
                     {...(fieldPath && { 'data-sb-field-path': '.links' })}
