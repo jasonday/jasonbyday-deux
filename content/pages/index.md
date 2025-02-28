@@ -76,7 +76,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: Featured Posts
+    subtitle: ''
   - type: RecentPostsSection
     title:
       type: TitleBlock
