@@ -69,6 +69,10 @@ sections:
         justifyContent: center
     type: FeaturedPostsSection
     hoverEffect: thick-underline
+    title:
+      type: TitleBlock
+      text: This Is A Big Headline
+      color: text-dark
   - type: RecentPostsSection
     title:
       type: TitleBlock
