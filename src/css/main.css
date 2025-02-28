@@ -124,6 +124,7 @@
     }
 
     header {
+
          #logo {
             @apply w-12;
         }
