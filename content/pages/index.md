@@ -73,6 +73,9 @@ sections:
       type: TitleBlock
       text: Featured Posts
       color: text-dark
+      styles:
+        self:
+          textAlign: center
     subtitle: Featured Posts
   - type: RecentPostsSection
     title:
