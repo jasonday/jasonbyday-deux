@@ -73,6 +73,7 @@ sections:
       type: TitleBlock
       text: Featured Posts
       color: text-dark
+    subtitle: Featured Posts
   - type: RecentPostsSection
     title:
       type: TitleBlock
