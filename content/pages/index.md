@@ -57,7 +57,7 @@ sections:
     showThumbnail: true
     showDate: true
     showAuthor: true
-    variant: small-list
+    variant: two-col-grid
     colors: bg-light-fg-dark
     styles:
       self:
