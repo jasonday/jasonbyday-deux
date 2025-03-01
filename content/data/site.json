@@ -1,9 +1,14 @@
 {
-    "favicon": "/images/favicon.svg",
+    "favicon": "/images/caricature2.png",
     "footer": "content/data/footer.json",
     "titleSuffix": "Jason Day",
-    "defaultSocialImage": "/images/main-hero.jpg",
+    "defaultSocialImage": "/images/caricature2.png",
     "type": "Config",
     "header": "content/data/header.json",
-    "enableAnnotations": true
+    "enableAnnotations": true,
+    "defaultMetaTags": [
+        {
+            "type": "MetaTag"
+        }
+    ]
 }
