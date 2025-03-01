@@ -149,7 +149,7 @@ sections:
         showIcon: true
         icon: send
         iconPosition: right
-        style: secondary
+        style: primary
         elementId: null
     badge:
       label: Contact Us
