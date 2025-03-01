@@ -68,7 +68,7 @@ sections:
           - pr-16
         justifyContent: center
     type: FeaturedPostsSection
-    hoverEffect: thick-underline
+    hoverEffect: thin-underline
     title:
       type: TitleBlock
       text: Featured Posts
