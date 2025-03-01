@@ -91,6 +91,11 @@ While the scope of accessibility issues might seem overwhelming, the data reveal
 
 ![Chart identifying most prevalent wcag failures](/images/webaim-graph.png)
 
+<figure>
+    <img src="/images/webaim-graph.png" alt="Chart identifying most prevalent wcag failures"/>
+    <figcaption>WCAG 2.1 Failure Types Prevalence, results via WAVE</figcaption>
+</figure>
+
 WCAG 2.1 Failure Types Prevalence, results via WAVE
 
 1.  [Low contrast text](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) (81.0% of home pages)
