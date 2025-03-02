@@ -81,8 +81,9 @@ articleImage:
   elementId: ''
   styles:
     self:
-      borderRadius: medium
+      borderRadius: none
 ---
+
 ![three hurdles standing in the way of the flag/objective](/images/hurdles.jpg)
 
 In an increasingly digital world, web accessibility isn't just a nice-to-have, it's a necessity. For six consecutive years, WebAIM, a non-profit with a focus on digital accessibility, has conducted comprehensive evaluations of the top one million websites' home pages. Their [2024 WebAIM Million Project](https://webaim.org/projects/million/) report paints a concerning picture of the current state of web accessibility, while also offering valuable insights into potential improvements.
@@ -126,9 +127,9 @@ How many errors would you tolerate? Errors accounted for 17% of checkout abandon
 
 ### How do errors affect people with disabilities?
 
-*   71% of disabled users will abandon a website that they find difficult to use ([Click-Away 2016](https://www.clickawaypound.com/cap16finalreport.html))
+- 71% of disabled users will abandon a website that they find difficult to use ([Click-Away 2016](https://www.clickawaypound.com/cap16finalreport.html))
 
-*   In an older [Nielsen Norman Group study](https://www.nngroup.com/reports/usability-guidelines-accessible-web-design/), the time on task for assistive technology users was double that of the control group with a 60% lower success rate.
+- In an older [Nielsen Norman Group study](https://www.nngroup.com/reports/usability-guidelines-accessible-web-design/), the time on task for assistive technology users was double that of the control group with a 60% lower success rate.
 
 With an average of 56.8 accessibility errors per homepage, that represents a significant hurdle to expect users to overcome.
 
@@ -146,11 +147,11 @@ As websites continue to grow in complexity, the challenge of maintaining accessi
 
 ### Where to start?
 
-*   **Start small.** Start using an automated tool to detect low hanging fruit accessibility issues.
+- **Start small.** Start using an automated tool to detect low hanging fruit accessibility issues.
 
-*   **Skill up.** Get training on incorporating accessibility into your Software Development Lifecyle (SDLC), and learn how to do accessibility testing.
+- **Skill up.** Get training on incorporating accessibility into your Software Development Lifecyle (SDLC), and learn how to do accessibility testing.
 
-*   **Understand current state.** Get an audit from an experienced professional.
+- **Understand current state.** Get an audit from an experienced professional.
 
 Digital accessibility is a journey and can't be accomplished overnight. Avoid "too good to be true" solutions, as accessibility requires thoughtful implementation. Read the [Overlay Fact Sheet](https://overlayfactsheet.com/en/) for more information.
 
