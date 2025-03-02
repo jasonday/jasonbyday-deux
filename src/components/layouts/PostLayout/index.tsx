@@ -6,6 +6,7 @@ import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 import Link from '../../atoms/Link';
 
+
 export default function PostLayout(props) {
     const { page, site } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
@@ -13,6 +14,7 @@ export default function PostLayout(props) {
     const { title, date, author, markdown_content, bottomSections = [] } = page;
     const dateTimeAttr = dayjs(date).format('YYYY-MM-DD HH:mm:ss');
     const formattedDate = dayjs(date).format('YYYY-MM-DD');
+    const hasArticleImage = !!(post.articleImage?.url);
 
     return (
         <BaseLayout page={page} site={site}>
@@ -32,6 +34,13 @@ export default function PostLayout(props) {
                                     </>
                                 )}
                             </div>
+                            {hasArticleImage && (
+                                <ImageBlock
+                                    {...post.articleImage}
+                                    imageClassName="w-full h-full object-cover"
+                                    {...(hasAnnotations && { 'data-sb-field-path': 'articleImage' })}
+                                />
+                            )}
                         </header>
                         {markdown_content && (
                             <Markdown

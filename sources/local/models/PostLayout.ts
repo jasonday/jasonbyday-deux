@@ -38,7 +38,6 @@ export const PostLayout: Model = {
             hidden: false,
             localized: false
         },
-
         {
             type: 'date',
             name: 'date',
@@ -55,6 +54,15 @@ export const PostLayout: Model = {
             hidden: false,
             localized: false,
             models: ['Person']
+        },
+        {
+            type: 'model',
+            name: 'articleImage',
+            label: 'Article image',
+            required: false,
+            hidden: false,
+            localized: false,
+            models: ['ImageBlock']
         },
         {
             type: 'string',

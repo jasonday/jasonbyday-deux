@@ -14,6 +14,8 @@ export const MetaTag: Model = {
       hidden: false,
       localized: false,
       options: [
+        'author',
+        'copyright',
         'og:title',
         'og:type',
         'og:image',
