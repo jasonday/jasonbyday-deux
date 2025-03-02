@@ -15,7 +15,7 @@ export default function PostLayout(props) {
     const { title, date, author, markdown_content, bottomSections = [] } = page;
     const dateTimeAttr = dayjs(date).format('YYYY-MM-DD HH:mm:ss');
     const formattedDate = dayjs(date).format('YYYY-MM-DD');
-    const hasArticleImage = !!(post.articleImage?.url);
+    const hasArticleImage = !!(page.articleImage?.url);
 
     return (
         <BaseLayout page={page} site={site}>
