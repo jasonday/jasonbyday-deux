@@ -4,8 +4,11 @@ title: 'The Accessibility Blame Game: The Fallacy of the "Lazy Developer"'
 date: '2022-10-10'
 author: content/data/jason-day.json
 excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+  In the digital accessibility industry, a pervasive narrative persists: "If
+  only developers cared more about accessibility..."But this narrative is not
+  just unfair, it misrepresents the real problem. Accessibility failures are
+  rarely about individual laziness; they stem from systemic organizational
+  shortcomings.
 featuredImage:
   type: ImageBlock
   url: /images/abstract-feature1.svg
