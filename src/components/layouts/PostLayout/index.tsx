@@ -38,6 +38,9 @@ export default function PostLayout(props) {
                             {hasArticleImage && (
                                 <ImageBlock
                                     {...page.articleImage}
+                                     className={classNames({
+                                        'pt-8'
+                                    })}
                                     imageClassName="w-full h-full object-cover"
                                     {...(enableAnnotations && { 'data-sb-field-path': 'articleImage' })}
                                 />
