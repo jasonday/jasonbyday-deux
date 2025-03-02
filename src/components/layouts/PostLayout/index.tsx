@@ -6,7 +6,6 @@ import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 import Link from '../../atoms/Link';
 import ImageBlock from '../../blocks/ImageBlock';
-import classNames from 'classnames';
 
 
 export default function PostLayout(props) {
@@ -39,10 +38,7 @@ export default function PostLayout(props) {
                             {hasArticleImage && (
                                 <ImageBlock
                                     {...page.articleImage}
-                                    className={classNames(
-                                        'pt-8',
-                                        className
-                                    )}
+                                    className='pt-8'
                                     imageClassName="w-full h-full object-cover"
                                     {...(enableAnnotations && { 'data-sb-field-path': 'articleImage' })}
                                 />
