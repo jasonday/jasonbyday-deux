@@ -94,7 +94,7 @@ articleImage:
   elementId: ''
   styles:
     self:
-      borderRadius: medium
+      borderRadius: none
 ---
 ![a broken robot, badged with the universal design logo, electricity crackling and smoke rising from it saying 'install me'](/images/robot-widget.png)
 
