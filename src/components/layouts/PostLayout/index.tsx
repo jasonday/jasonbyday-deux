@@ -5,6 +5,7 @@ import Markdown from 'markdown-to-jsx';
 import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 import Link from '../../atoms/Link';
+import ImageBlock from '../../blocks/ImageBlock';
 
 
 export default function PostLayout(props) {
@@ -14,7 +15,7 @@ export default function PostLayout(props) {
     const { title, date, author, markdown_content, bottomSections = [] } = page;
     const dateTimeAttr = dayjs(date).format('YYYY-MM-DD HH:mm:ss');
     const formattedDate = dayjs(date).format('YYYY-MM-DD');
-    const hasArticleImage = post.articleImage?.url;
+    const hasArticleImage = !!(post.articleImage?.url);
 
     return (
         <BaseLayout page={page} site={site}>
