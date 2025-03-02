@@ -76,7 +76,7 @@ featuredImage:
       borderRadius: none
 articleImage:
   type: ImageBlock
-  url: /images/hurdles.jpg
+  url: /images/hero2.svg
   altText: three hurdles standing in the way of the flag/object
   elementId: ''
   styles:
