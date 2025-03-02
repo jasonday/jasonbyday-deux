@@ -76,7 +76,7 @@ featuredImage:
       borderRadius: none
 articleImage:
   type: ImageBlock
-  url: /images/hero2.svg
+  url: /images/hurdles.jpg
   altText: Image alt text placeholder
   elementId: ''
   styles:
