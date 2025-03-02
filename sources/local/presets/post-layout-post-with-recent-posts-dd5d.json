@@ -13,6 +13,17 @@
                     "$$type": "Person"
                 },
                 "excerpt": "Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh.",
+                "articleImage": {
+                    "url": "/images/abstract-feature1.svg",
+                    "altText": "featured image",
+                    "elementId": "",
+                    "styles": {
+                        "self": {
+                            "padding": ["pt-0", "pl-0", "pb-0", "pr-0"]
+                        }
+                    },
+                    "$$type": "ImageBlock"
+                },
                 "featuredImage": {
                     "url": "/images/abstract-feature1.svg",
                     "altText": "Thumbnail",
