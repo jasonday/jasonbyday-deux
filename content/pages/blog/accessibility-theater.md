@@ -90,7 +90,7 @@ author: content/data/jason-day.json
 articleImage:
   type: ImageBlock
   url: /images/robot-widget.png
-  altText: Image alt text placeholder
+  altText: 'Broken robot, smoking and electricity sparking, saying "install me"'
   elementId: ''
   styles:
     self:
