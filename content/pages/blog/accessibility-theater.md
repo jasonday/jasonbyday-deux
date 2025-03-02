@@ -96,13 +96,9 @@ articleImage:
     self:
       borderRadius: none
 ---
-![a broken robot, badged with the universal design logo, electricity crackling and smoke rising from it saying 'install me'](/images/robot-widget.png)
-
-Good evening, and welcome to Masterpiece Digital Theater. Tonight we present a compelling drama that explores the world of digital accessibility - or rather, its charlatan counterfeits. 
+Good evening, and welcome to Masterpiece Digital Theater. Tonight we present a compelling drama that explores the world of digital accessibility - or rather, its charlatan counterfeits.
 
 "Accessibility Theater: The Cautionary Tale of Overlays" takes us into the modern boardrooms and living rooms where the drama of digital inclusion, or exclusion, plays out daily. Our story examines how not-so-well intentioned solutions can become mere performance, a facade of accessibility that ultimately fails those it claims to serve.
-
-
 
 A play in three acts...
 
