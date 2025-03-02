@@ -74,6 +74,14 @@ featuredImage:
   styles:
     self:
       borderRadius: none
+articleImage:
+  type: ImageBlock
+  url: /images/hurdles.jpg
+  altText: three hurdles standing in the way of the flag/object
+  elementId: ''
+  styles:
+    self:
+      borderRadius: medium
 ---
 ![three hurdles standing in the way of the flag/objective](/images/hurdles.jpg)
 
