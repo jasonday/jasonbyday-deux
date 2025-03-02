@@ -77,7 +77,7 @@ featuredImage:
 articleImage:
   type: ImageBlock
   url: /images/hurdles.jpg
-  altText: Image alt text placeholder
+  altText: three hurdles standing in the way of the flag/object
   elementId: ''
   styles:
     self:
