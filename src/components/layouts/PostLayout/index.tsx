@@ -5,7 +5,6 @@ import Markdown from 'markdown-to-jsx';
 import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 import Link from '../../atoms/Link';
-import ImageBlock from '../../blocks/ImageBlock';
 
 
 export default function PostLayout(props) {
