@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: 'The Accessibility Blame Game: The Fallacy of the "Lazy Developer"'
-date: '2025-02-10'
+date: '2025-02-03'
 author: content/data/jason-day.json
 excerpt: >-
   In the digital accessibility industry, a pervasive narrative persists: "If
