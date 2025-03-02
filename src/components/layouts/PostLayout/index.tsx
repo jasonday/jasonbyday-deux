@@ -39,7 +39,7 @@ export default function PostLayout(props) {
                                 <ImageBlock
                                     {...page.articleImage}
                                     imageClassName="w-full h-full object-cover"
-                                    {...(hasAnnotations && { 'data-sb-field-path': 'articleImage' })}
+                                    {...(enableAnnotations && { 'data-sb-field-path': 'articleImage' })}
                                 />
                             )}
                         </header>
