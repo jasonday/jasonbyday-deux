@@ -187,6 +187,10 @@ export const RecentPostsSection: Model = {
             required: true,
             options: [
                 {
+                    label: 'Standard',
+                    value: 'standard'
+                },
+                {
                     label: 'Thin underline',
                     value: 'thin-underline'
                 },

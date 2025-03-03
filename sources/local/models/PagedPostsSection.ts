@@ -170,6 +170,10 @@ export const PagedPostsSection: Model = {
             required: true,
             options: [
                 {
+                    label: 'Standard',
+                    value: 'standard'
+                },
+                {
                     label: 'Thin underline',
                     value: 'thin-underline'
                 },

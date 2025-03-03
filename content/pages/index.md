@@ -68,7 +68,7 @@ sections:
           - pr-16
         justifyContent: center
     type: FeaturedPostsSection
-    hoverEffect: thin-underline
+    hoverEffect: standard
     title:
       type: TitleBlock
       text: Featured Posts
@@ -94,7 +94,7 @@ sections:
     elementId: ''
     variant: three-col-grid
     colors: bg-light-fg-dark
-    hoverEffect: thin-underline
+    hoverEffect: standard
     styles:
       self:
         justifyContent: center
