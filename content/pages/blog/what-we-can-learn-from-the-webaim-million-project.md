@@ -39,6 +39,7 @@ bottomSections:
     styles:
       self:
         justifyContent: center
+    hoverEffect: standard
 slug: what-we-can-learn-from-the-webaim-million-project
 isFeatured: false
 isDraft: false
