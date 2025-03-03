@@ -26,7 +26,7 @@ topSections:
           - pr-4
         justifyContent: flex-start
     type: FeaturedPostsSection
-    hoverEffect: move-up
+    hoverEffect: standard
 styles:
   title:
     textAlign: center
@@ -52,6 +52,6 @@ postFeed:
   elementId: null
   variant: three-col-grid
   colors: bg-light-fg-dark
-  hoverEffect: move-up
+  hoverEffect: standard
 isDraft: false
 ---
