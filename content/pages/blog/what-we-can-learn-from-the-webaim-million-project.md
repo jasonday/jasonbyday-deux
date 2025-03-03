@@ -83,7 +83,7 @@ articleImage:
     self:
       borderRadius: none
 ---
-In an increasingly digital world, web accessibility isn't just a nice-to-have, it's a necessity. For six consecutive years, WebAIM, a non-profit with a focus on digital accessibility, has conducted comprehensive evaluations of the top one million websites' home pages. Their [2024 WebAIM Million Project](https://webaim.org/projects/million/) report paints a concerning picture of the current state of web accessibility, while also offering valuable insights into potential improvements.
+![](/images/contenful-logo.svg)In an increasingly digital world, web accessibility isn't just a nice-to-have, it's a necessity. For six consecutive years, WebAIM, a non-profit with a focus on digital accessibility, has conducted comprehensive evaluations of the top one million websites' home pages. Their [2024 WebAIM Million Project](https://webaim.org/projects/million/) report paints a concerning picture of the current state of web accessibility, while also offering valuable insights into potential improvements.
 
 Note: WebAIM typically publishes the report in February or March, so we should be able to view the 2025 results soon. For the sake of this article, I am using the 2024 report.
 
