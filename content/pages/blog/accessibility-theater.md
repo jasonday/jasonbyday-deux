@@ -56,6 +56,7 @@ bottomSections:
     styles:
       self:
         justifyContent: center
+    hoverEffect: standard
 slug: accessibility-theater
 isFeatured: false
 isDraft: false
