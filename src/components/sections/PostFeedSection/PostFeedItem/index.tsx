@@ -131,6 +131,7 @@ function mapFlexDirectionStyles(flexDirection: string, hasThumbnail: boolean) {
 
 function mapCardHoverStyles(hoverEffect: string, colors: string) {
     switch (hoverEffect) {
+        case 'standard':
         case 'thin-underline':
         case 'thick-underline':
             return 'group';
@@ -151,6 +152,10 @@ function mapCardHoverStyles(hoverEffect: string, colors: string) {
 
 function mapCardTitleHoverStyles(hoverEffect: string, colors: string) {
     switch (hoverEffect) {
+        case 'standard':
+            return colors === 'bg-dark-fg-light'
+                ? 'hover:underline focus:underline group-hover:underline group-focus:underline decoration-2 underline-offset-4'
+                : 'hover:underline focus:underline group-hover:underline group-focus:underline decoration-2 underline-offset-4';
         case 'thin-underline':
             return colors === 'bg-dark-fg-light'
                 ? 'bg-left-bottom bg-[length:0_1px] bg-no-repeat bg-gradient-to-r from-light to-light transition-[background-size] duration-300 ease-in-out group-hover:bg-[length:100%_1px]'
