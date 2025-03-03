@@ -53,6 +53,7 @@ bottomSections:
     styles:
       self:
         justifyContent: center
+    hoverEffect: standard
 slug: the-fallacy-of-the-lazy-developer
 isFeatured: false
 isDraft: false
