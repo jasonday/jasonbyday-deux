@@ -76,7 +76,7 @@ styles:
       - pr-4
 articleImage:
   type: ImageBlock
-  url: /images/hero2.svg
+  url: /images/vhm_1741095233.png
   altText: Image alt text placeholder
   elementId: ''
   styles:
