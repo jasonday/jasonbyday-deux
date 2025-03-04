@@ -145,7 +145,7 @@
             @apply bg-dark;
             height: .2em;
             width: 1.5em;
-            margin: 2px auto 4px;
+            margin: 4px auto;
         }
 
         button[aria-expanded="true"] {
