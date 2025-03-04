@@ -3,19 +3,6 @@ type: PostLayout
 title: Accessibility Statement
 date: '2025-03-04'
 author: content/data/jason-day.json
-articleImage:
-  type: ImageBlock
-  url: /images/abstract-feature1.svg
-  altText: featured image
-  elementId: ''
-  styles:
-    self:
-      padding:
-        - pt-0
-        - pl-0
-        - pb-0
-        - pr-0
-      borderRadius: none
 excerpt: >-
   Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
   Donec sed facilisis nibh.
