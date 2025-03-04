@@ -27,7 +27,7 @@
     .sb-markdown {
         @apply leading-relaxed;
         a {
-            @apply underline transition duration-200 ease-in outline-offset-2;
+            @apply underline transition duration-200 ease-in;
         }
         a:hover {
             @apply text-primary;
@@ -183,7 +183,7 @@
 
     /* Links */
     .sb-component-link {
-        @apply inline-flex justify-center items-center text-center transition duration-200 ease-linear outline-offset-2;
+        @apply inline-flex justify-center items-center text-center transition duration-200 ease-linear;
     }
     .sb-component-link-primary {
         @apply text-primary hover:underline;
