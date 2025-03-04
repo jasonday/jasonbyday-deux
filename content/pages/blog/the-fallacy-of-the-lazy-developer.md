@@ -105,7 +105,7 @@ While developers often bear the brunt of accessibility criticisms, it's crucial 
 ![](/images/Picture1-10.png)
 
 <figure>
-<img src="stackbit_asset_id:static:public/images/Picture1-10.png" alt="DeQue chart, showing software development lifecycle, indicating 67% of accessibility defects originate in design."/>
+<img src="/images/Picture1-10.png" alt="DeQue chart, showing software development lifecycle, indicating 67% of accessibility defects originate in design."/>
 <figcaption>DeQue case study indicating that the bulk of accessibility defects originate in design.</figcaption>
 </figure>
 
