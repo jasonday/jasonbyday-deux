@@ -98,10 +98,57 @@ styles:
   self:
     flexDirection: row
 ---
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
+## Measures to support accessibility
 
-> Vestibulum ullamcorper risus auctor eleifend consequat.
+Jason Day takes the following measures to ensure accessibility of Jason Day:
 
-In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+*   Include accessibility as part of our mission statement.
 
-Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+*   Include accessibility throughout our internal policies.
+
+*   Integrate accessibility into our procurement practices.
+
+*   Appoint an accessibility officer and/or ombudsperson.
+
+*   Provide continual accessibility training for our staff.
+
+*   Assign clear accessibility goals and responsibilities.
+
+*   Employ formal accessibility quality assurance methods.
+
+## Conformance status
+
+The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. Jason Day is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard.
+
+## Feedback
+
+We welcome your feedback on the accessibility of Jason Day. Please let us know if you encounter accessibility barriers on Jason Day:
+
+*   E-mail: <jasonbyday@outlook.com>
+
+## Technical specifications
+
+Accessibility of Jason Day relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:
+
+*   HTML
+
+*   WAI-ARIA
+
+*   CSS
+
+*   JavaScript
+
+These technologies are relied upon for conformance with the accessibility standards used.
+
+## Assessment approach
+
+Jason Day assessed the accessibility of Jason Day by the following approaches:
+
+*   Self-evaluation
+
+## Date
+
+This statement was created on 4 March 2025 using the [W3C Accessibility Statement Generator Tool](https://www.w3.org/WAI/planning/statements/).
+
+
+
