@@ -68,6 +68,7 @@ seo:
     shortcomings.
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/vhm_1741095233.png
 colors: bg-light-fg-dark
 styles:
   self:
