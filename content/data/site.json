@@ -11,9 +11,6 @@
             "type": "MetaTag",
             "property": "author",
             "content": "Jason Day"
-        },
-        {
-            "type": "MetaTag"
         }
     ]
 }
