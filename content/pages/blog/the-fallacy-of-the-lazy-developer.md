@@ -11,7 +11,7 @@ excerpt: >-
   shortcomings.
 featuredImage:
   type: ImageBlock
-  url: /images/abstract-feature1.svg
+  url: /images/vhm_1741095233.png
   altText: Thumbnail
   elementId: ''
   styles:
