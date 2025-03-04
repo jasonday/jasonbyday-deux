@@ -164,7 +164,17 @@
 
     }
    
+    figure {
+        @apply border border-current;
 
+        img {
+            @apply p-4;
+        }
+
+        figcaption {
+            @apply p-2 text-center italic border-top border-current;
+        }
+    }
 
     /* Buttons */
     .sb-component-button {
