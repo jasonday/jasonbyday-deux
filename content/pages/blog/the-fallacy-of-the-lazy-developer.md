@@ -90,6 +90,8 @@ In the digital accessibility industry, a pervasive narrative persists: "If only 
 ## The Agile Illusion: Scrumfall? Wagile?
 
 ![Ron Burgundy - By "agile" you mean "waterfall in sprints"?](https://preview--jasonbday-f2e75.stackbit.dev/_static/app-assets/public/images/sprints.webp)
+
+
 Many tech companies tout their agile methodologies such as daily stand-ups, sprint planning, iterative design - it all sounds great, but the reality often feels like waterfall projects timeboxed to two-week sprints. This "Scrumfall" approach combines the sequential phases of waterfall with the time constraints of Scrum, without embracing true agile collaboration. We're still in linear product development, with engineers at the end of the process. This approach leads to compressed timelines, more bureaucracy, and lack of collaboration, where it's easy to point the finger at the last person to touch the product when things go wrong.
 
 When it comes to accessibility, these "Wagile" processes break down even further. Product requirements may include vague accessibility stories like "As a user, I want WCAG 2.1 AA compliance." Designs may be finalized without accessibility annotations or clear communication of intent.
