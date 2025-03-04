@@ -11,8 +11,8 @@ excerpt: >-
   shortcomings.
 featuredImage:
   type: ImageBlock
-  url: /images/abstract-feature1.svg
-  altText: Thumbnail
+  url: /images/vhm_1741095233.png
+  altText: 'Bored sloth, at their computer'
   elementId: ''
   styles:
     self:
@@ -59,10 +59,16 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
-  addTitleSuffix: false
+  metaTitle: ''
+  metaDescription: >-
+    In the digital accessibility industry, a pervasive narrative persists: "If
+    only developers cared more about accessibility...". But this narrative is
+    unfair, and it misrepresents the real problem. Accessibility failures are
+    rarely about individual laziness; they stem from systemic organizational
+    shortcomings.
+  addTitleSuffix: true
   metaTags: []
+  socialImage: /images/vhm_1741095233.png
 colors: bg-light-fg-dark
 styles:
   self:
