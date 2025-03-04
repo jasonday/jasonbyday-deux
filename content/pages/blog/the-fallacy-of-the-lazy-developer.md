@@ -83,13 +83,15 @@ articleImage:
   elementId: ''
   styles:
     self:
-      borderRadius: medium
+      borderRadius: none
 ---
 In the digital accessibility industry, a pervasive narrative persists: "If only developers cared more about accessibility...". But this narrative is unfair, and it misrepresents the real problem. Accessibility failures are rarely about individual laziness; they stem from systemic organizational shortcomings. This article examines why blaming developers is counterproductive and proposes a holistic approach to improving digital accessibility across organizations.
 
 ## The Agile Illusion: Scrumfall? Wagile?
 
 ![Ron Burgundy - By "agile" you mean "waterfall in sprints"?](https://preview--jasonbday-f2e75.stackbit.dev/_static/app-assets/public/images/sprints.webp)
+
+
 Many tech companies tout their agile methodologies such as daily stand-ups, sprint planning, iterative design - it all sounds great, but the reality often feels like waterfall projects timeboxed to two-week sprints. This "Scrumfall" approach combines the sequential phases of waterfall with the time constraints of Scrum, without embracing true agile collaboration. We're still in linear product development, with engineers at the end of the process. This approach leads to compressed timelines, more bureaucracy, and lack of collaboration, where it's easy to point the finger at the last person to touch the product when things go wrong.
 
 When it comes to accessibility, these "Wagile" processes break down even further. Product requirements may include vague accessibility stories like "As a user, I want WCAG 2.1 AA compliance." Designs may be finalized without accessibility annotations or clear communication of intent.
@@ -102,10 +104,8 @@ What appears as "resistance" or "laziness" is often just the inevitable result o
 
 While developers often bear the brunt of accessibility criticisms, it's crucial to understand that accessibility shortfalls occur across the entire product development lifecycle. According to research from DeQue, a staggering [67% of accessibility defects originate in the design phase](https://www.deque.com/blog/is-closing-the-web-accessibility-design-development-gap-a-bridge-too-far/#:~:text=But%2067%25%20of%20accessibility%20issues,do%20we%20cross%20that%20chasm?) - long before developers write a single line of code.
 
-![](/images/Picture1-10.png)
-
 <figure>
-<img src="stackbit_asset_id:static:public/images/Picture1-10.png" alt="DeQue chart, showing software development lifecycle, indicating 67% of accessibility defects originate in design."/>
+<img src="/images/Picture1-10.png" alt="DeQue chart, showing software development lifecycle, indicating 67% of accessibility defects originate in design."/>
 <figcaption>DeQue case study indicating that the bulk of accessibility defects originate in design.</figcaption>
 </figure>
 
