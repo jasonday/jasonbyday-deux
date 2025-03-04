@@ -60,7 +60,12 @@ isDraft: false
 seo:
   type: Seo
   metaTitle: ''
-  metaDescription: lorem-ipsum
+  metaDescription: >-
+    In the digital accessibility industry, a pervasive narrative persists: "If
+    only developers cared more about accessibility...". But this narrative is
+    unfair, and it misrepresents the real problem. Accessibility failures are
+    rarely about individual laziness; they stem from systemic organizational
+    shortcomings.
   addTitleSuffix: false
   metaTags: []
 colors: bg-light-fg-dark
