@@ -27,7 +27,7 @@
     .sb-markdown {
         @apply leading-relaxed;
         a {
-            @apply underline transition duration-200 ease-in;
+            @apply underline transition duration-200 ease-in outline-offset-2;
         }
         a:hover {
             @apply text-primary;
