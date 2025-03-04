@@ -66,7 +66,7 @@ seo:
     unfair, and it misrepresents the real problem. Accessibility failures are
     rarely about individual laziness; they stem from systemic organizational
     shortcomings.
-  addTitleSuffix: false
+  addTitleSuffix: true
   metaTags: []
   socialImage: /images/vhm_1741095233.png
 colors: bg-light-fg-dark
