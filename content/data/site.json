@@ -8,7 +8,8 @@
     "enableAnnotations": true,
     "defaultMetaTags": [
         {
-            "type": "MetaTag"
+            "type": "MetaTag",
+            "property": "author"
         }
     ]
 }
