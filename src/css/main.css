@@ -172,7 +172,7 @@
         }
 
         figcaption {
-            @apply p-2 text-center italic border-top border-current;
+            @apply p-2 text-center italic border-t border-current;
         }
     }
 
