@@ -83,7 +83,7 @@ articleImage:
   elementId: ''
   styles:
     self:
-      borderRadius: medium
+      borderRadius: none
 ---
 In the digital accessibility industry, a pervasive narrative persists: "If only developers cared more about accessibility...". But this narrative is unfair, and it misrepresents the real problem. Accessibility failures are rarely about individual laziness; they stem from systemic organizational shortcomings. This article examines why blaming developers is counterproductive and proposes a holistic approach to improving digital accessibility across organizations.
 
