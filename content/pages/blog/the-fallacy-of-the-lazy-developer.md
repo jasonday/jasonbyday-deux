@@ -12,7 +12,7 @@ excerpt: >-
 featuredImage:
   type: ImageBlock
   url: /images/vhm_1741095233.png
-  altText: Thumbnail
+  altText: 'Bored sloth, at their computer'
   elementId: ''
   styles:
     self:
