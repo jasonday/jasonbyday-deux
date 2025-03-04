@@ -9,7 +9,8 @@
     "defaultMetaTags": [
         {
             "type": "MetaTag",
-            "property": "author"
+            "property": "author",
+            "content": "Jason Day"
         }
     ]
 }
