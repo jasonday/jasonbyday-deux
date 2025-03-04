@@ -102,8 +102,6 @@ What appears as "resistance" or "laziness" is often just the inevitable result o
 
 While developers often bear the brunt of accessibility criticisms, it's crucial to understand that accessibility shortfalls occur across the entire product development lifecycle. According to research from DeQue, a staggering [67% of accessibility defects originate in the design phase](https://www.deque.com/blog/is-closing-the-web-accessibility-design-development-gap-a-bridge-too-far/#:~:text=But%2067%25%20of%20accessibility%20issues,do%20we%20cross%20that%20chasm?) - long before developers write a single line of code.
 
-![](/images/Picture1-10.png)
-
 <figure>
 <img src="/images/Picture1-10.png" alt="DeQue chart, showing software development lifecycle, indicating 67% of accessibility defects originate in design."/>
 <figcaption>DeQue case study indicating that the bulk of accessibility defects originate in design.</figcaption>
