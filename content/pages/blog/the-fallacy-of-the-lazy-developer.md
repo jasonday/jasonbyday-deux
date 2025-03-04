@@ -77,7 +77,9 @@ styles:
 articleImage:
   type: ImageBlock
   url: /images/vhm_1741095233.png
-  altText: Image alt text placeholder
+  altText: >-
+    Bored sloth, at their computer rendered in half-tone. Dark gray over a field
+    of red.
   elementId: ''
   styles:
     self:
