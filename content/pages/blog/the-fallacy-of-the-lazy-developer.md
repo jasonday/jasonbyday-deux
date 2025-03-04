@@ -59,7 +59,7 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
+  metaTitle: ''
   metaDescription: lorem-ipsum
   addTitleSuffix: false
   metaTags: []
