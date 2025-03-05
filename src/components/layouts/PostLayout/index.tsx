@@ -6,6 +6,7 @@ import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 import Link from '../../atoms/Link';
 import ImageBlock from '../../blocks/ImageBlock';
+import Giscus from '@giscus/react';
 
 
 export default function PostLayout(props) {
@@ -88,6 +89,36 @@ function PostAuthor({ author, enableAnnotations }) {
         <span {...(enableAnnotations && { 'data-sb-field-path': 'author' })}>{authorName}</span>
     );
 }
+
+
+
+
+
+function giscusApp() {
+    return (
+        <article>
+        <h2 className="center">Comments</h2>
+        <p>You must be logged in via GitHub to comment.</p>
+        <p>Note: The comments section is not fully accessible. I am working with the repo owner on issues to resolve. Comments can be posted on the discussion in github as an alternative.</p>
+        <Giscus
+        id="comments"
+        repo="giscus/giscus-component"
+        repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
+        category="Announcements"
+        categoryId="DIC_kwDOF1L2fM4B-hVS"
+        mapping="specific"
+        term="Welcome to @giscus/react component!"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme="light"
+        lang="en"
+        loading="lazy"
+        />
+        </article>
+    );
+}
+
 
 /*
 function PostCategory({ category, enableAnnotations }) {
