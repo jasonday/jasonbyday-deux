@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: This is a new page
+title: This is my page
 sections:
   - type: ContentSection
     title:
