@@ -157,27 +157,6 @@ sections:
       type: Badge
     colors: bg-light-fg-dark
     type: GenericSection
-  - type: ContentSection
-    title:
-      type: TitleBlock
-      text: Markdown
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
-    subtitle: Section with a subtitle
-    content: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.
