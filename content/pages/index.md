@@ -163,4 +163,6 @@ seo:
   socialImage: /images/main-hero.jpg
   type: Seo
 type: PageLayout
+hideH1: true
+isDraft: false
 ---
