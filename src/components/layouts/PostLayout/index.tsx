@@ -57,10 +57,10 @@ export default function PostLayout(props) {
                     </div>
                 </article>
                 <article className="px-4 py-16 sm:py-28">
-                    <div className="mx-auto max-w-screen-2xl">
+                    <div className="mx-auto max-w-3xl sb-markdown">
                         <h2 className="center">Comments</h2>
                         <p>You must be logged in via GitHub to comment.</p>
-                        <p>Note: The comments section is not fully accessible. I am working with the repo owner on resolving issues. Comments can be posted on the <a href="https://github.com/jasonday/jasonbyday-deux/discussions">discussion in github</a> as an alternative.</p>
+                        <p className="pb-8">Note: The comments section is not fully accessible. I am working with the repo owner on resolving issues. Comments can be posted on the <a href="https://github.com/jasonday/jasonbyday-deux/discussions">discussion in github</a> as an alternative.</p>
                         <Giscus
                             repo="jasonday/jasonbyday-deux"
                             repoId="R_kgDON_7SFg"
