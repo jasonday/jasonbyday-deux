@@ -103,7 +103,8 @@ export const PostLayout: Model = {
                     'GenericSection',
                     'ImageGallerySection',
                     'PricingSection',
-                    'RecentPostsSection'
+                    'RecentPostsSection',
+                    'ContentSection'
                 ]
             }
         },

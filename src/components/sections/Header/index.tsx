@@ -28,7 +28,7 @@ export default function Header(props) {
             {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
         >
             <div className="mx-auto max-w-7xl">
-                <Link href="#main" className="sr-only">
+                <Link href="#main" className="sr-only focus:not-sr-only focus:inline-block !mb-2 ">
                     Skip to main content
                 </Link>
                 <HeaderVariants {...props} />

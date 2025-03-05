@@ -2,18 +2,29 @@ import * as React from 'react';
 
 import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
+import classNames from 'classnames';
 
 export default function PageLayout(props) {
-    const { page, site } = props;
+    const { page, site, className } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
-    const { title, sections = [] } = page;
+    const { title, hideH1, sections = [] } = page;
 
     return (
         <BaseLayout page={page} site={site}>
             <main id="main" className="sb-layout sb-page-layout bg-light-fg-dark">
                 {title && (
-                    <h1 className="sr-only" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
+                    <h1 className={classNames(
+                                    'max-w-4xl',
+                                    'mx-auto',
+                                    'mb-12',
+                                    'text-center',
+                                    'pt-28',
+                                    className,
+                                    hideH1 ? 'sr-only' : 'visible',
+                                    {...(enableAnnotations && { 'data-sb-field-path': 'title' })}
+                                )} 
+                    >
                         {title}
                     </h1>
                 )}

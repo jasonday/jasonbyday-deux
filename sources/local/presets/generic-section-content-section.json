@@ -1,0 +1,37 @@
+{
+    "model": "ContentSection",
+    "presets": [
+        {
+            "label": "Content section with markdown",
+            "locale": null,
+            "data": {
+                "title": {
+                    "text": "Markdown",
+                    "color": "text-dark",
+                    "styles": {
+                        "self": {
+                            "textAlign": "left"
+                        }
+                    },
+                    "$$type": "TitleBlock"
+                },
+                "subtitle": "Section with a subtitle",
+                "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.\nAenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet\nerat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat\nvitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
+                "actions": [],
+                "elementId": null,
+                "colors": "bg-light-fg-dark",
+                "backgroundImage": null,
+                "styles": {
+                    "self": {
+                        "flexDirection": "row",
+                        "justifyContent": "center"
+                    },
+                    "subtitle": {
+                        "textAlign": "left"
+                    }
+                }
+            },
+            "thumbnail": "images/generic-section-generic-section-with-video-a138.png"
+        }
+    ]
+}

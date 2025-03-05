@@ -145,13 +145,13 @@
             @apply bg-dark;
             height: .2em;
             width: 1.5em;
-            margin: 2px auto 4px;
+            margin: 4px auto;
         }
 
         button[aria-expanded="true"] {
             > div {
                 .line:nth-child(1) {
-                  transform: translateX(0) translateY(8px) rotate(45deg);
+                  transform: translateX(0) translateY(9px) rotate(45deg);
                 }
                 .line:nth-child(2) {
                   visibility: hidden;
@@ -164,7 +164,17 @@
 
     }
    
+    figure {
+        @apply border border-current;
 
+        img {
+            @apply p-4;
+        }
+
+        figcaption {
+            @apply p-2 text-center italic border-t border-current;
+        }
+    }
 
     /* Buttons */
     .sb-component-button {

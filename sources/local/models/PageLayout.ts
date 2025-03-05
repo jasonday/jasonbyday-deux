@@ -47,7 +47,8 @@ export const PageLayout: Model = {
                     'GenericSection',
                     'ImageGallerySection',
                     'PricingSection',
-                    'RecentPostsSection'
+                    'RecentPostsSection',
+                    'ContentSection'
                 ]
             }
         },
@@ -66,6 +67,16 @@ export const PageLayout: Model = {
             type: 'boolean',
             name: 'isDraft',
             label: 'Draft',
+            required: false,
+            default: false,
+            hidden: false,
+            localized: false,
+            group: 'settings'
+        },
+        {
+            type: 'boolean',
+            name: 'hideH1',
+            label: 'Hide H1?',
             required: false,
             default: false,
             hidden: false,
