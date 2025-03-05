@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
+import classNames from 'classnames';
+import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 
 export default function PageLayout(props) {
     const { page, site } = props;
@@ -13,7 +15,17 @@ export default function PageLayout(props) {
         <BaseLayout page={page} site={site}>
             <main id="main" className="sb-layout sb-page-layout bg-light-fg-dark">
                 {title && (
-                    <h1 className={hideH1 ? 'sr-only' : 'visible'} {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
+                    <h1 className={classNames(
+                                    'max-w-4xl',
+                                    'mx-auto',
+                                    'mb-12',
+                                    'text-center',
+                                    className,
+                                    hideH1 ? 'sr-only' : 'visible',
+                                    styles?.self ? mapStyles(styles?.self) : undefined,
+                                    {...(enableAnnotations && { 'data-sb-field-path': 'title' })}
+                                )} 
+                    >
                         {title}
                     </h1>
                 )}
