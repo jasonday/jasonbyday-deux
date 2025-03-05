@@ -3,7 +3,6 @@ import * as React from 'react';
 import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 import classNames from 'classnames';
-import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 
 export default function PageLayout(props) {
     const { page, site, className } = props;
@@ -22,7 +21,6 @@ export default function PageLayout(props) {
                                     'text-center',
                                     className,
                                     hideH1 ? 'sr-only' : 'visible',
-                                    styles?.self ? mapStyles(styles?.self) : undefined,
                                     {...(enableAnnotations && { 'data-sb-field-path': 'title' })}
                                 )} 
                     >
