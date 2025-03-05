@@ -1,14 +1,16 @@
 {
-    "favicon": "/images/caricature2.png",
+    "favicon": "/images/favicon-16x16.png",
     "footer": "content/data/footer.json",
     "titleSuffix": "Jason Day",
-    "defaultSocialImage": "/images/caricature2.png",
+    "defaultSocialImage": "/images/favicon-16x16.png",
     "type": "Config",
     "header": "content/data/header.json",
     "enableAnnotations": true,
     "defaultMetaTags": [
         {
-            "type": "MetaTag"
+            "type": "MetaTag",
+            "property": "author",
+            "content": "Jason Day"
         }
     ]
 }
