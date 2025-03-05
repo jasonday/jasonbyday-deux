@@ -101,19 +101,17 @@ function giscusApp() {
         <p>You must be logged in via GitHub to comment.</p>
         <p>Note: The comments section is not fully accessible. I am working with the repo owner on issues to resolve. Comments can be posted on the discussion in github as an alternative.</p>
         <Giscus
-        id="comments"
-        repo="giscus/giscus-component"
-        repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
+        repo="jasonday/jasonbyday-deux"
+        repoId="R_kgDON_7SFg"
         category="Announcements"
-        categoryId="DIC_kwDOF1L2fM4B-hVS"
-        mapping="specific"
-        term="Welcome to @giscus/react component!"
+        categoryId="DIC_kwDON_7SFs4CnmNx"
+        mapping="title"
+        strict="0"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"
-        theme="light"
+        theme="light_high_contrast"
         lang="en"
-        loading="lazy"
         />
         </article>
     );
