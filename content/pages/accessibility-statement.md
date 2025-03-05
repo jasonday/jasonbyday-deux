@@ -22,7 +22,7 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: left
-slug: test2
+slug: accessibility-statement
 isDraft: false
 seo:
   type: Seo
