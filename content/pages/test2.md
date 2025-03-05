@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: This is my page
+title: Accessibility Statement
 sections:
   - type: ContentSection
     subtitle: ''
