@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 
 export default function PageLayout(props) {
-    const { page, site } = props;
+    const { page, site, className } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
     const { title, hideH1, sections = [] } = page;
