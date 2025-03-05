@@ -33,8 +33,6 @@ export default function ContentSection(props) {
                             'max-w-sectionBody',
                             'text-lg',
                             'sm:text-2xl',
-                            'pt-28',
-                            'sm:pt-8',
                             styles?.subtitle ? mapStyles(styles?.subtitle) : undefined,
                             {
                                 'mt-4': badge?.label || title?.text
