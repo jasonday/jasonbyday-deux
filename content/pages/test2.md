@@ -3,13 +3,6 @@ type: PageLayout
 title: This is my page
 sections:
   - type: ContentSection
-    title:
-      type: TitleBlock
-      text: ''
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
     subtitle: ''
     content: |
       Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
