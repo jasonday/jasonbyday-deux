@@ -7,13 +7,13 @@ export default function PageLayout(props) {
     const { page, site } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
-    const { title, sections = [] } = page;
+    const { title, hideH1, sections = [] } = page;
 
     return (
         <BaseLayout page={page} site={site}>
             <main id="main" className="sb-layout sb-page-layout bg-light-fg-dark">
                 {title && (
-                    <h1 className="sr-only" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
+                    <h1 className={hideH1 ? 'sr-only' : 'visible'} {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
                         {title}
                     </h1>
                 )}
