@@ -164,4 +164,5 @@ seo:
   type: Seo
 type: PageLayout
 hideH1: true
+isDraft: false
 ---
