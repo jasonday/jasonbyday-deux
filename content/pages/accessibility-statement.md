@@ -19,7 +19,6 @@ seo:
   metaTitle: ''
   metaDescription: Accessibility statement
   addTitleSuffix: true
-  socialImage: /images/main-hero.jpg
   metaTags: []
 hideH1: false
 ---
