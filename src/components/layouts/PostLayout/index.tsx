@@ -62,17 +62,17 @@ export default function PostLayout(props) {
                         <p>You must be logged in via GitHub to comment.</p>
                         <p>Note: The comments section is not fully accessible. I am working with the repo owner on resolving issues. Comments can be posted on the <a href="https://github.com/jasonday/jasonbyday-deux/discussions">discussion in github</a> as an alternative.</p>
                         <Giscus
-                        repo="jasonday/jasonbyday-deux"
-                        repoId="R_kgDON_7SFg"
-                        category="Announcements"
-                        categoryId="DIC_kwDON_7SFs4CnmNx"
-                        mapping="title"
-                        strict="0"
-                        reactionsEnabled="1"
-                        emitMetadata="0"
-                        inputPosition="top"
-                        theme="light_high_contrast"
-                        lang="en"
+                            repo="jasonday/jasonbyday-deux"
+                            repoId="R_kgDON_7SFg"
+                            category="Announcements"
+                            categoryId="DIC_kwDON_7SFs4CnmNx"
+                            mapping="title"
+                            strict="0"
+                            reactionsEnabled="1"
+                            emitMetadata="0"
+                            inputPosition="top"
+                            theme="light_high_contrast"
+                            lang="en"
                         />
                     </div>
                 </article>
