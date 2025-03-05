@@ -20,7 +20,6 @@ export default function PageLayout(props) {
                                     'mb-12',
                                     'text-center',
                                     'pt-28',
-                                    'sm:pt-8',
                                     className,
                                     hideH1 ? 'sr-only' : 'visible',
                                     {...(enableAnnotations && { 'data-sb-field-path': 'title' })}
