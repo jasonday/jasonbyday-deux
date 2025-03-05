@@ -5,7 +5,7 @@ sections:
   - type: ContentSection
     title:
       type: TitleBlock
-      text: Markdown
+      text: Markdown my page
       color: text-dark
       styles:
         self:
