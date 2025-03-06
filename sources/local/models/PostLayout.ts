@@ -142,6 +142,17 @@ export const PostLayout: Model = {
             group: 'settings'
         },
         {
+            type: 'string',
+            name: 'bluesky',
+            label: 'Bluesky url',
+            required: false,
+            default:
+                'https://bsky.app/profile/jasonbyday.bsky.social/post/3liwyl7w5l22m',
+            hidden: false,
+            localized: false,
+            group: 'settings'
+        },
+        {
             type: 'model',
             name: 'seo',
             label: 'SEO',
