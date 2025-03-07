@@ -8,7 +8,7 @@ import ChevronLeftIcon from '../../svgs/chevron-left';
 import ChevronRightIcon from '../../svgs/chevron-right';
 
 export default function PostFeedLayout(props) {
-    const { page, site } = props;
+    const { page, site, className } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
     const { title, topSections = [], bottomSections = [], pageIndex, baseUrlPath, numOfPages, enableSearch, items, postFeed, hideH1 } = page;
