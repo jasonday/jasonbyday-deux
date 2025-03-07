@@ -23,23 +23,25 @@
     }
 
     /* Fluid Typography Scale */
+    /* Font H1 */
     h1, .h1 {
-        font-size: clamp(3rem, 2.7273rem + 1.0909vw, 3.6rem);
+        font-size: clamp(2.244rem, 1.571vw + 1.930rem, 3.815rem);
     }
+
     h2, .h2 {
-        font-size: clamp(2.25rem, 2.0455rem + 0.8182vw, 2.7rem);
+        font-size: clamp(1.907rem, 1.144vw + 1.679rem, 3.052rem);
     }
     h3, .h3 {
-        font-size: clamp(1.875rem, 1.7045rem + 0.6818vw, 2.25rem);
+        font-size: clamp(1.627rem, 0.814vw + 1.465rem, 2.441rem);
     }
     h4, .h4 {
-        font-size: clamp(1.5rem, 1.3636rem + 0.5455vw, 1.8rem);
+        font-size: clamp(1.395rem, 0.558vw + 1.283rem, 1.953rem);
     }
     h5, .h5 {
-        font-size: clamp(1.25rem, 1.1364rem + 0.4545vw, 1.5rem);
+        font-size: clamp(1.202rem, 0.361vw + 1.130rem, 1.563rem);
     }
     h6, .h6 {
-        font-size: clamp(1.125rem, 1.0227rem + 0.4091vw, 1.35rem);
+        font-size: clamp(1.042rem, 0.208vw + 1.000rem, 1.250rem);
     }
 }
 
