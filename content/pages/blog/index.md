@@ -31,4 +31,5 @@ postFeed:
   colors: bg-light-fg-dark
   hoverEffect: standard
 isDraft: false
+hideH1: false
 ---
