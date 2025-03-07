@@ -18,7 +18,7 @@ export default function PostFeedLayout(props) {
 
     return (
         <BaseLayout page={page} site={site}>
-            <main id="main" className="sb-layout sb-page-layout">
+            <main id="main" className="sb-layout sb-page-layout bg-light-fg-dark">
                {title && (
                     <h1 className={classNames(
                                     'max-w-4xl',
