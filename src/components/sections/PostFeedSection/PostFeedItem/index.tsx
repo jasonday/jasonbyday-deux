@@ -26,8 +26,8 @@ export default function PostFeedItem(props) {
     const hasThumbnail = !!(showThumbnail && post.featuredImage?.url);
 
     return (
-        <Link
-            href={getPageUrl(post)}
+        <div
+           // href={getPageUrl(post)}
             className={classNames(
                 'sb-card',
                 'block',
@@ -66,6 +66,12 @@ export default function PostFeedItem(props) {
                         'xs:grow': hasThumbnail && (flexDirection === 'row' || flexDirection === 'row-reversed')
                     })}
                 >
+                    <Link
+                        href={getPageUrl(post)}
+                        className={classNames('block', 'group', 'p-4', 'w-full', 'h-full', 'hover:no-underline')}
+                        {...(hasAnnotations && { 'data-sb-object-id': post.__metadata?.id })}
+                        >
+                    
                     <TitleTag className="h3">
                         <span
                             className={classNames(mapCardTitleHoverStyles(hoverEffect, post.colors))}
@@ -74,6 +80,7 @@ export default function PostFeedItem(props) {
                             {post.title}
                         </span>
                     </TitleTag>
+                    </Link> 
                     <PostAttribution
                         showAuthor={showAuthor}
                         showDate={showDate}
@@ -89,7 +96,7 @@ export default function PostFeedItem(props) {
                     )}
                 </div>
             </div>
-        </Link>
+        </div>
     );
 }
 
