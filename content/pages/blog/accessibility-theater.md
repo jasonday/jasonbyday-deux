@@ -77,7 +77,7 @@ seo:
 colors: bg-light-fg-dark
 styles:
   self:
-    flexDirection: col
+    flexDirection: row
     borderColor: border-dark
     borderRadius: none
     borderWidth: 2
