@@ -51,12 +51,18 @@ export default function AutoCompletePosts() {
 }
 
 export function ResultItem({ hit, components, onSelect }) {
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            onSelect(event, hit);
+        }
+    };
+
     return (
         <a
             href={hit.url}
             className="aa-ItemLink"
             onClick={(event) => onSelect(event, hit)}
-            onKeyDown={(event) => onSelect(event, hit)}
+            onKeyDown={handleKeyDown}
         >
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle">
