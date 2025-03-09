@@ -2,6 +2,17 @@
     "primaryLinks": [
         {
             "type": "Link",
+            "label": "Home",
+            "altText": "",
+            "url": "/",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "elementId": ""
+        },
+        {
+            "type": "Link",
             "label": "Blog",
             "altText": "",
             "url": "/blog",
