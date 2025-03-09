@@ -18,7 +18,8 @@ export default function PostFeedItem(props) {
         hasBigThumbnail,
         hoverEffect = 'move-up',
         sectionColors,
-        hasAnnotations
+        hasAnnotations,
+        blogList,
     } = props;
     const TitleTag = hasSectionTitle ? 'h3' : 'h2';
     const flexDirection = post.styles?.self?.flexDirection ?? 'col';
@@ -47,7 +48,8 @@ export default function PostFeedItem(props) {
             )}
             {...(hasAnnotations && { 'data-sb-object-id': post.__metadata?.id })}
         >
-            <div className={classNames('w-full', 'flex', mapFlexDirectionStyles(flexDirection, hasThumbnail), 'gap-6')}>
+            
+            <div className={classNames('flex', {'w-full':!blogList, 'grid':blogList, 'grid-cols-[31.8%_68.1%]':blogList, mapFlexDirectionStyles(flexDirection, hasThumbnail)})}>
                 {hasThumbnail && (
                     <ImageBlock
                         {...post.featuredImage}

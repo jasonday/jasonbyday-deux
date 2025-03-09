@@ -317,6 +317,7 @@ function PostFeedBlogList(props) {
                     hoverEffect={hoverEffect}
                     sectionColors={colors}
                     hasAnnotations={hasAnnotations}
+                    blogList={true}
                 />
             ))}
         </div>
