@@ -165,7 +165,9 @@ sections:
       styles:
         self:
           textAlign: center
-    posts: []
+    posts:
+      - content/pages/blog/accessibility-theater.md
+      - content/pages/blog/the-fallacy-of-the-lazy-developer.md
     showThumbnail: true
     showExcerpt: true
     showDate: true
