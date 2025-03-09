@@ -9,9 +9,7 @@ styles:
     textAlign: center
 seo:
   metaTitle: ''
-  metaDescription: >-
-    This is the blog of the demo site where we post about technology, product,
-    and design.
+  metaDescription: 'Yet Another Accessibility Blog. '
   socialImage: /images/img-placeholder.svg
   type: Seo
   addTitleSuffix: true
