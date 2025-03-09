@@ -7,6 +7,6 @@ export const ALGOLIA_ADMIN_API_KEY = process.env.ALGOLIA_ADMIN_API_KEY;
 export const ENV_NAME = /*process.env.NODE_ENV ||*/ 'development';
 
 export function buildIndexName() {
-    const indexName = ENV_NAME + '_' + ALGOLIA_INDEX_NAME_SUFFIX;
+    const indexName = ALGOLIA_INDEX_NAME_SUFFIX;
     return indexName;
 }
