@@ -14,7 +14,7 @@ export default function AutoCompletePosts() {
             window.location.href = item.url;
         }
     };
-    
+
     return (
         <BaseAutoComplete
             openOnFocus={true}
@@ -35,7 +35,13 @@ export default function AutoCompletePosts() {
                     },
                     templates: {
                         item({ item, components }) {
-                            return <ResultItem hit={item} components={components} />;
+                            return (
+                                <ResultItem
+                                    hit={item}
+                                    components={components}
+                                    onSelect={handleSelect}
+                                />
+                            );
                         }
                     }
                 }
@@ -44,9 +50,14 @@ export default function AutoCompletePosts() {
     );
 }
 
-export function ResultItem({ hit, components }) {
+export function ResultItem({ hit, components, onSelect }) {
     return (
-        <a href={hit.url} className="aa-ItemLink">
+        <a
+            href={hit.url}
+            className="aa-ItemLink"
+            onClick={(event) => onSelect(event, hit)}
+            onKeyDown={(event) => onSelect(event, hit)}
+        >
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle">
                     <components.Highlight hit={hit} attribute="title" />
