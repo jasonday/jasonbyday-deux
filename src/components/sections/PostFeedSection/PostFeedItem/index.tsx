@@ -67,17 +67,18 @@ export default function PostFeedItem(props) {
                     })}
                 >
 
-                    <Link
-                    href={getPageUrl(post)}>
+                   
                     <TitleTag className="h3">
-                        <span
-                            className={classNames(mapCardTitleHoverStyles(hoverEffect, post.colors))}
-                            {...(hasAnnotations && { 'data-sb-field-path': 'title' })}
-                        >
-                            {post.title}
-                        </span>
+                        <Link href={getPageUrl(post)} className={classNames(mapCardTitleHoverStyles(hoverEffect, post.colors))}>
+                            <span
+                                
+                                {...(hasAnnotations && { 'data-sb-field-path': 'title' })}
+                            >
+                                {post.title}
+                            </span>
+                        </Link>
                     </TitleTag>
-                    </Link>
+                    
                     <PostAttribution
                         showAuthor={showAuthor}
                         showDate={showDate}
