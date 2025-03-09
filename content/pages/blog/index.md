@@ -25,7 +25,7 @@ postFeed:
   showAuthor: true
   actions: []
   elementId: null
-  variant: small-list
+  variant: blog-list
   colors: bg-light-fg-dark
   hoverEffect: standard
 isDraft: false
