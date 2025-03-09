@@ -34,9 +34,6 @@ export default function AutoCompletePosts() {
                             return <ResultItem hit={item} components={components} />;
                         }
                     },
-                    getItemUrl({ item }) {
-                        return item.url; // Ensure this URL is correct
-                    },
                     onSelect({ item }) {
                         console.log("Selected item", item);
                         router.push(item.url); // Ensures keyboard navigation works
