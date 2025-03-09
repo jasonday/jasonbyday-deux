@@ -56,7 +56,7 @@ export default function PostLayout(props) {
                         )}
                     </div>
                 </article>
-                <article className="px-4 py-16 sm:py-28">
+                <article className="px-4 pb-16 sm:pb-28">
                     <div className="mx-auto max-w-3xl sb-markdown">
                         <h2 className="center">Comments</h2>
                         <p>You must be logged in via GitHub to comment.</p>

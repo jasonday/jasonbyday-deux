@@ -129,6 +129,16 @@ export const PostFeedLayout: Model = {
             group: 'settings'
         },
         {
+            type: 'boolean',
+            name: 'hideH1',
+            label: 'Hide H1?',
+            required: false,
+            default: false,
+            hidden: false,
+            localized: false,
+            group: 'settings'
+        },
+        {
             type: 'style',
             name: 'styles',
             label: 'Styles',

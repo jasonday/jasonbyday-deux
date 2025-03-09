@@ -21,6 +21,28 @@
         @apply break-words;
         line-height: 1.2;
     }
+
+    /* Fluid Typography Scale */
+    /* Font H1 */
+    h1, .h1 {
+        font-size: clamp(2.244rem, 1.571vw + 1.930rem, 3.815rem);
+    }
+
+    h2, .h2 {
+        font-size: clamp(1.907rem, 1.144vw + 1.679rem, 3.052rem);
+    }
+    h3, .h3 {
+        font-size: clamp(1.627rem, 0.814vw + 1.465rem, 2.441rem);
+    }
+    h4, .h4 {
+        font-size: clamp(1.395rem, 0.558vw + 1.283rem, 1.953rem);
+    }
+    h5, .h5 {
+        font-size: clamp(1.202rem, 0.361vw + 1.130rem, 1.563rem);
+    }
+    h6, .h6 {
+        font-size: clamp(1.042rem, 0.208vw + 1.000rem, 1.250rem);
+    }
 }
 
 @layer components {

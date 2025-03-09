@@ -8,19 +8,29 @@ import ChevronLeftIcon from '../../svgs/chevron-left';
 import ChevronRightIcon from '../../svgs/chevron-right';
 
 export default function PostFeedLayout(props) {
-    const { page, site } = props;
+    const { page, site, className } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
-    const { title, topSections = [], bottomSections = [], pageIndex, baseUrlPath, numOfPages, enableSearch, items, postFeed } = page;
+    const { title, topSections = [], bottomSections = [], pageIndex, baseUrlPath, numOfPages, enableSearch, items, postFeed, hideH1 } = page;
     const PostFeedSection = getComponent('PostFeedSection');
     const pageLinks = PageLinks({ pageIndex, baseUrlPath, numOfPages });
     const searchBox = SearchBox({ enableSearch });
 
     return (
         <BaseLayout page={page} site={site}>
-            <main id="main" className="sb-layout sb-page-layout">
-                {title && (
-                    <h1 className="sr-only" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
+            <main id="main" className="sb-layout sb-page-layout bg-light-fg-dark">
+               {title && (
+                    <h1 className={classNames(
+                                    'max-w-4xl',
+                                    'mx-auto',
+                                    'mb-12',
+                                    'text-center',
+                                    'pt-28',
+                                    className,
+                                    hideH1 ? 'sr-only' : 'visible',
+                                    {...(enableAnnotations && { 'data-sb-field-path': 'title' })}
+                                )} 
+                    >
                         {title}
                     </h1>
                 )}

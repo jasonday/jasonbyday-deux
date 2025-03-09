@@ -35,6 +35,16 @@ export const ContentSection: Model = {
             localized: false
         },
         {
+            type: 'boolean',
+            name: 'isDraft',
+            label: 'Draft',
+            required: false,
+            default: false,
+            hidden: false,
+            localized: false,
+            group: 'settings'
+        },
+        {
             type: 'string',
             name: 'elementId',
             label: 'Element ID',
