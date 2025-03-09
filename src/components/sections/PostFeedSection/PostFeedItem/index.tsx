@@ -49,7 +49,7 @@ export default function PostFeedItem(props) {
             {...(hasAnnotations && { 'data-sb-object-id': post.__metadata?.id })}
         >
             
-            <div className={classNames('flex', 'gap-6', {'w-full':!blogList, 'grid':blogList, 'grid-cols-[31.8%_68.1%]':blogList, 'md:grid-cols-1':blogList}, mapFlexDirectionStyles(flexDirection, hasThumbnail))}>
+            <div className={classNames('flex', 'gap-6', {'w-full':!blogList, 'grid':blogList, 'grid-cols-[31.8%_68.1%]':blogList, 'sm:grid-cols-1':blogList}, mapFlexDirectionStyles(flexDirection, hasThumbnail))}>
                 {hasThumbnail && (
                     <ImageBlock
                         {...post.featuredImage}
