@@ -8,6 +8,13 @@ import BaseAutoComplete from './BaseAutoComplete';
 const searchClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_API_KEY);
 
 export default function AutoCompletePosts() {
+
+    const handleSelect = (event, item) => {
+        if (event.key === 'Enter' || event.type === 'click') {
+            window.location.href = item.url;
+        }
+    };
+    
     return (
         <BaseAutoComplete
             openOnFocus={true}
