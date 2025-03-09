@@ -2,17 +2,6 @@
     "primaryLinks": [
         {
             "type": "Link",
-            "label": "Blog",
-            "altText": "",
-            "url": "/blog",
-            "showIcon": false,
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "primary",
-            "elementId": ""
-        },
-        {
-            "type": "Link",
             "label": "Home",
             "altText": "",
             "url": "/",
@@ -20,6 +9,17 @@
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
+            "elementId": ""
+        },
+        {
+            "type": "Link",
+            "label": "Blog",
+            "altText": "",
+            "url": "/blog",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "primary",
             "elementId": ""
         }
     ],
