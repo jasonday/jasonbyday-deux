@@ -77,6 +77,7 @@ sections:
         self:
           textAlign: center
     subtitle: ''
+    showExcerpt: true
   - type: RecentPostsSection
     title:
       type: TitleBlock
