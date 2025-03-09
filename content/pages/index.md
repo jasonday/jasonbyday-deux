@@ -157,6 +157,35 @@ sections:
       type: Badge
     colors: bg-light-fg-dark
     type: GenericSection
+  - type: FeaturedPostsSection
+    title:
+      type: TitleBlock
+      text: Featured posts
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+    posts:
+      - content/pages/blog/track-the-right-metrics-for-your-business.md
+      - content/pages/blog/five-tips-for-starting-a-startup.md
+      - content/pages/blog/what-is-a-design-system.md
+    showThumbnail: true
+    showExcerpt: true
+    showDate: true
+    showAuthor: true
+    actions: []
+    elementId: ''
+    variant: small-list
+    colors: bg-light-fg-dark
+    hoverEffect: standard
+    styles:
+      self:
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
+        justifyContent: center
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.
