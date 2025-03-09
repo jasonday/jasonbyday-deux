@@ -8,6 +8,13 @@ import BaseAutoComplete from './BaseAutoComplete';
 const searchClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_API_KEY);
 
 export default function AutoCompletePosts() {
+
+    const handleSelect = (event, item) => {
+        if (event.key === 'Enter' || event.type === 'click') {
+            window.location.href = item.url;
+        }
+    };
+
     return (
         <BaseAutoComplete
             openOnFocus={true}
@@ -28,7 +35,13 @@ export default function AutoCompletePosts() {
                     },
                     templates: {
                         item({ item, components }) {
-                            return <ResultItem hit={item} components={components} />;
+                            return (
+                                <ResultItem
+                                    hit={item}
+                                    components={components}
+                                    onSelect={handleSelect}
+                                />
+                            );
                         }
                     }
                 }
@@ -37,9 +50,14 @@ export default function AutoCompletePosts() {
     );
 }
 
-export function ResultItem({ hit, components }) {
+export function ResultItem({ hit, components, onSelect }) {
     return (
-        <a href={hit.url} className="aa-ItemLink">
+        <a
+            href={hit.url}
+            className="aa-ItemLink"
+            onClick={(event) => onSelect(event, hit)}
+            onKeyDown={(event) => onSelect(event, hit)}
+        >
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle">
                     <components.Highlight hit={hit} attribute="title" />
