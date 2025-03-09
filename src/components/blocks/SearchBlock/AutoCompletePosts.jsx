@@ -14,6 +14,7 @@ export default function AutoCompletePosts() {
     return (
         <BaseAutoComplete
             openOnFocus={true}
+            detachedMediaQuery="none"
             placeholder="Search in posts..."
             getSources={({ query }) => [
                 {

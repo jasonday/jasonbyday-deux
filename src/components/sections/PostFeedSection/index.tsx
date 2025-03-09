@@ -112,6 +112,8 @@ function PostFeedVariants(props) {
             return <PostFeedSmallList {...rest} />;
         case 'big-list':
             return <PostFeedBigList {...rest} />;
+        case 'blog-list':
+            return <PostFeedBlogList {...rest} />;
         default:
             return <PostFeedThreeColGrid {...rest} />;
     }
@@ -240,6 +242,47 @@ function PostFeedSmallList(props) {
 }
 
 function PostFeedBigList(props) {
+    const {
+        posts = [],
+        showThumbnail,
+        showExcerpt,
+        showDate,
+        showAuthor,
+        hasTopMargin,
+        hasSectionTitle,
+        hoverEffect,
+        colors,
+        hasAnnotations,
+        annotatePosts
+    } = props;
+    if (posts.length === 0) {
+        return null;
+    }
+    return (
+        <div
+            className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
+            {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
+        >
+            {posts.map((post, index) => (
+                <PostFeedItem
+                    key={index}
+                    post={post}
+                    showThumbnail={showThumbnail}
+                    showExcerpt={showExcerpt}
+                    showDate={showDate}
+                    showAuthor={showAuthor}
+                    hasSectionTitle={hasSectionTitle}
+                    hasBigThumbnail={true}
+                    hoverEffect={hoverEffect}
+                    sectionColors={colors}
+                    hasAnnotations={hasAnnotations}
+                />
+            ))}
+        </div>
+    );
+}
+
+function PostFeedBlogList(props) {
     const {
         posts = [],
         showThumbnail,

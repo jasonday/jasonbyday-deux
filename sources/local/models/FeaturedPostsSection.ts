@@ -129,6 +129,11 @@ export const FeaturedPostsSection: Model = {
                     thumbnail: 'https://assets.stackbit.com/components/images/default/small-list.png'
                 },
                 {
+                    label: 'Blog list',
+                    value: 'blog-list',
+                    thumbnail: 'https://assets.stackbit.com/components/images/default/small-list.png'
+                },
+                {
                     label: 'Big list',
                     value: 'big-list',
                     thumbnail: 'https://assets.stackbit.com/components/images/default/big-list.png'
