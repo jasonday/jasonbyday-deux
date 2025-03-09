@@ -92,7 +92,7 @@ sections:
     showAuthor: true
     actions: []
     elementId: ''
-    variant: three-col-grid
+    variant: blog-list
     colors: bg-light-fg-dark
     hoverEffect: standard
     styles:
