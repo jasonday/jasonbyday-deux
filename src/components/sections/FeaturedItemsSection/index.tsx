@@ -81,6 +81,8 @@ function FeaturedItemVariants(props) {
             return <FeaturedItemsTwoColGrid {...rest} />;
         case 'small-list':
             return <FeaturedItemsSmallList {...rest} />;
+        case 'blog-list':
+            return <FeaturedItemsBlogList {...rest} />;
         case 'big-list':
             return <FeaturedItemsBigList {...rest} />;
         case 'toggle-list':
@@ -145,6 +147,21 @@ function FeaturedItemsSmallList(props) {
 }
 
 function FeaturedItemsBigList(props) {
+    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
+    if (items.length === 0) {
+        return null;
+    }
+    const FeaturedItem = getComponent('FeaturedItem');
+    return (
+        <div className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })} {...(hasAnnotations && { 'data-sb-field-path': '.items' })}>
+            {items.map((item, index) => (
+                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+            ))}
+        </div>
+    );
+}
+
+function FeaturedItemsBlogList(props) {
     const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
     if (items.length === 0) {
         return null;

@@ -1,8 +1,8 @@
 ---
 title: Blog
 slug: /blog
-numOfPostsPerPage: 8
-enableSearch: false
+numOfPostsPerPage: 5
+enableSearch: true
 topSections: []
 styles:
   title:
@@ -25,7 +25,7 @@ postFeed:
   showAuthor: true
   actions: []
   elementId: null
-  variant: three-col-grid
+  variant: blog-list
   colors: bg-light-fg-dark
   hoverEffect: standard
 isDraft: false

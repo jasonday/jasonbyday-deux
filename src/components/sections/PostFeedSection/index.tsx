@@ -112,6 +112,8 @@ function PostFeedVariants(props) {
             return <PostFeedSmallList {...rest} />;
         case 'big-list':
             return <PostFeedBigList {...rest} />;
+        case 'blog-list':
+            return <PostFeedBlogList {...rest} />;
         default:
             return <PostFeedThreeColGrid {...rest} />;
     }
@@ -135,7 +137,7 @@ function PostFeedThreeColGrid(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', 'lg:grid-cols-3', {
                 'mt-12': hasTopMargin
             })}
@@ -177,7 +179,7 @@ function PostFeedTwoColGrid(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
@@ -217,7 +219,7 @@ function PostFeedSmallList(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
@@ -257,7 +259,7 @@ function PostFeedBigList(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
@@ -274,6 +276,48 @@ function PostFeedBigList(props) {
                     hoverEffect={hoverEffect}
                     sectionColors={colors}
                     hasAnnotations={hasAnnotations}
+                />
+            ))}
+        </div>
+    );
+}
+
+function PostFeedBlogList(props) {
+    const {
+        posts = [],
+        showThumbnail,
+        showExcerpt,
+        showDate,
+        showAuthor,
+        hasTopMargin,
+        hasSectionTitle,
+        hoverEffect,
+        colors,
+        hasAnnotations,
+        annotatePosts
+    } = props;
+    if (posts.length === 0) {
+        return null;
+    }
+    return (
+        <div role="list" 
+            className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
+            {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
+        >
+            {posts.map((post, index) => (
+                <PostFeedItem
+                    key={index}
+                    post={post}
+                    showThumbnail={showThumbnail}
+                    showExcerpt={showExcerpt}
+                    showDate={showDate}
+                    showAuthor={showAuthor}
+                    hasSectionTitle={hasSectionTitle}
+                    hasBigThumbnail={true}
+                    hoverEffect={hoverEffect}
+                    sectionColors={colors}
+                    hasAnnotations={hasAnnotations}
+                    blogList={true}
                 />
             ))}
         </div>

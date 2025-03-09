@@ -53,7 +53,7 @@ sections:
           - pr-16
   - posts:
       - content/pages/blog/accessibility-theater.md
-      - content/pages/blog/what-we-can-learn-from-the-webaim-million-project.md
+      - content/pages/blog/the-fallacy-of-the-lazy-developer.md
     showThumbnail: true
     showDate: true
     showAuthor: true
@@ -77,6 +77,7 @@ sections:
         self:
           textAlign: center
     subtitle: ''
+    showExcerpt: true
   - type: RecentPostsSection
     title:
       type: TitleBlock
@@ -92,7 +93,7 @@ sections:
     showAuthor: true
     actions: []
     elementId: ''
-    variant: three-col-grid
+    variant: blog-list
     colors: bg-light-fg-dark
     hoverEffect: standard
     styles:

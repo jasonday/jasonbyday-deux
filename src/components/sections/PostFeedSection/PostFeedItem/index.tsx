@@ -18,15 +18,15 @@ export default function PostFeedItem(props) {
         hasBigThumbnail,
         hoverEffect = 'move-up',
         sectionColors,
-        hasAnnotations
+        hasAnnotations,
+        blogList,
     } = props;
     const TitleTag = hasSectionTitle ? 'h3' : 'h2';
     const flexDirection = post.styles?.self?.flexDirection ?? 'col';
     const hasThumbnail = !!(showThumbnail && post.featuredImage?.url);
 
     return (
-        <Link
-            href={getPageUrl(post)}
+        <div role="listitem" 
             className={classNames(
                 'sb-card',
                 'block',
@@ -47,7 +47,8 @@ export default function PostFeedItem(props) {
             )}
             {...(hasAnnotations && { 'data-sb-object-id': post.__metadata?.id })}
         >
-            <div className={classNames('w-full', 'flex', mapFlexDirectionStyles(flexDirection, hasThumbnail), 'gap-6')}>
+            
+            <div className={classNames('flex', 'gap-6', {'w-full':!blogList, 'grid':blogList, 'md:grid-cols-[31.8%_68.1%]':blogList, 'grid-cols-1':blogList}, mapFlexDirectionStyles(flexDirection, hasThumbnail))}>
                 {hasThumbnail && (
                     <ImageBlock
                         {...post.featuredImage}
@@ -64,14 +65,19 @@ export default function PostFeedItem(props) {
                         'xs:grow': hasThumbnail && (flexDirection === 'row' || flexDirection === 'row-reversed')
                     })}
                 >
+
+                   
                     <TitleTag className="h3">
-                        <span
-                            className={classNames(mapCardTitleHoverStyles(hoverEffect, post.colors))}
-                            {...(hasAnnotations && { 'data-sb-field-path': 'title' })}
-                        >
-                            {post.title}
-                        </span>
+                        <Link href={getPageUrl(post)} className={classNames(mapCardTitleHoverStyles(hoverEffect, post.colors))}>
+                            <span
+                                
+                                {...(hasAnnotations && { 'data-sb-field-path': 'title' })}
+                            >
+                                {post.title}
+                            </span>
+                        </Link>
                     </TitleTag>
+                    
                     <PostAttribution
                         showAuthor={showAuthor}
                         showDate={showDate}
@@ -87,7 +93,7 @@ export default function PostFeedItem(props) {
                     )}
                 </div>
             </div>
-        </Link>
+        </div>
     );
 }
 
