@@ -4,16 +4,12 @@ import algoliasearch from 'algoliasearch';
 import { getAlgoliaResults } from '@algolia/autocomplete-js';
 import '@algolia/autocomplete-theme-classic';
 import BaseAutoComplete from './BaseAutoComplete';
+import { useRouter } from 'next/router';
 
 const searchClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_API_KEY);
 
 export default function AutoCompletePosts() {
-
-    const handleSelect = (event, item) => {
-        if (event.key === 'Enter' || event.type === 'click') {
-            window.location.href = item.url;
-        }
-    };
+    const router = useRouter();
 
     return (
         <BaseAutoComplete
@@ -35,35 +31,24 @@ export default function AutoCompletePosts() {
                     },
                     templates: {
                         item({ item, components }) {
-                            return (
-                                <ResultItem
-                                    hit={item}
-                                    components={components}
-                                    onSelect={handleSelect}
-                                />
-                            );
+                            return <ResultItem hit={item} components={components} />;
                         }
-                    }
+                    },
+                    getItemUrl({ item }) {
+                        return item.url; // Ensure this URL is correct
+                    },
+                    onSelect({ item }) {
+                        router.push(item.url); // Ensures keyboard navigation works
+                    },
                 }
             ]}
         />
     );
 }
 
-export function ResultItem({ hit, components, onSelect }) {
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
-            onSelect(event, hit);
-        }
-    };
-
+export function ResultItem({ hit, components }) {
     return (
-        <a
-            href={hit.url}
-            className="aa-ItemLink"
-            onClick={(event) => onSelect(event, hit)}
-            onKeyDown={handleKeyDown}
-        >
+        <a href={hit.url} className="aa-ItemLink">
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle">
                     <components.Highlight hit={hit} attribute="title" />
