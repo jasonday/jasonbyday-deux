@@ -53,7 +53,6 @@ sections:
           - pr-16
   - posts:
       - content/pages/blog/accessibility-theater.md
-      - content/pages/blog/what-we-can-learn-from-the-webaim-million-project.md
     showThumbnail: true
     showDate: true
     showAuthor: true
