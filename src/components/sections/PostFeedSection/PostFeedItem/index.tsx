@@ -26,8 +26,7 @@ export default function PostFeedItem(props) {
     const hasThumbnail = !!(showThumbnail && post.featuredImage?.url);
 
     return (
-        <div
-            href={getPageUrl(post)}
+        <div role="listitem" 
             className={classNames(
                 'sb-card',
                 'block',

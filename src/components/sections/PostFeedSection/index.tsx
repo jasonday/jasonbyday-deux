@@ -300,7 +300,7 @@ function PostFeedBlogList(props) {
         return null;
     }
     return (
-        <div
+        <div role="list"
             className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
