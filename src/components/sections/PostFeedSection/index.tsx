@@ -137,7 +137,7 @@ function PostFeedThreeColGrid(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', 'lg:grid-cols-3', {
                 'mt-12': hasTopMargin
             })}
@@ -179,7 +179,7 @@ function PostFeedTwoColGrid(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
@@ -219,7 +219,7 @@ function PostFeedSmallList(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
@@ -259,7 +259,7 @@ function PostFeedBigList(props) {
         return null;
     }
     return (
-        <div
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
@@ -300,7 +300,7 @@ function PostFeedBlogList(props) {
         return null;
     }
     return (
-        <div role="list"
+        <div role="list" 
             className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && annotatePosts && { 'data-sb-field-path': '.posts' })}
         >
