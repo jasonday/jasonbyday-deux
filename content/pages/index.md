@@ -53,6 +53,7 @@ sections:
           - pr-16
   - posts:
       - content/pages/blog/accessibility-theater.md
+      - content/pages/blog/the-fallacy-of-the-lazy-developer.md
     showThumbnail: true
     showDate: true
     showAuthor: true
