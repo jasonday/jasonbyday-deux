@@ -3,13 +3,6 @@ type: PageLayout
 title: Privacy policy
 sections:
   - type: ContentSection
-    title:
-      type: TitleBlock
-      text: Markdown
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
     subtitle: ''
     content: |-
       Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
