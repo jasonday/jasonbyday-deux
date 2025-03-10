@@ -9,15 +9,6 @@
         "title": "Pages",
         "links": [
             {
-                "label": "Accessibility statement",
-                "altText": "",
-                "url": "/accessibility-statement",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
                 "type": "Link",
                 "label": "Home",
                 "altText": "",
@@ -27,6 +18,15 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "elementId": ""
+            },
+            {
+                "label": "Accessibility statement",
+                "altText": "",
+                "url": "/accessibility-statement",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
             }
         ],
         "type": "FooterLinksGroup"
