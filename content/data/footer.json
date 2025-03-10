@@ -80,7 +80,7 @@
         },
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "mailto:jasonbyday@outlook.com",
             "icon": "mail",
             "type": "Social"
         }
