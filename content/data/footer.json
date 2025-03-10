@@ -11,7 +11,7 @@
             {
                 "label": "Features",
                 "altText": "Features page",
-                "url": "/",
+                "url": "/accessibility-statement",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
