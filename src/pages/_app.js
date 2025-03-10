@@ -1,8 +1,8 @@
 import '../css/main.css';
 
 // posthog
+import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
 // original
@@ -10,36 +10,22 @@ import { useEffect } from 'react';
 //     return <Component {...pageProps} />;
 // }
 
-function MyApp({ Component, pageProps }) {
-    const router = useRouter();
-
+export default function App({ Component, pageProps: { ...pageProps } }) {
     useEffect(() => {
-        const handleRouteChange = () => {
-            if (window.posthog) {
-                window.posthog.capture('$pageview');
+        posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+            api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+            // Enable debug mode in development
+            loaded: (posthog) => {
+                if (process.env.NODE_ENV === 'development') posthog.debug();
             }
-        };
-
-        router.events.on('routeChangeComplete', handleRouteChange);
-
-        handleRouteChange();
-
-        return () => {
-            router.events.off('routeChangeComplete', handleRouteChange);
-        };
-    }, [router.events]);
+        });
+    }, []);
 
     return (
-        <PostHogProvider
-            apiKey={process.env.NEXT_PUBLIC_POSTHOG_API_KEY}
-            options={{
-                api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
-                capture_pageview: false
-            }}
-        >
-            <Component {...pageProps} />
-        </PostHogProvider>
+        <>
+            <PostHogProvider client={posthog}>
+                <Component {...pageProps} />
+            </PostHogProvider>
+        </>
     );
 }
-
-export default MyApp;
