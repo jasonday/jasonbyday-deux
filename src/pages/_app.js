@@ -1,7 +1,6 @@
 import '../css/main.css';
 
 // posthog
-import { SessionProvider } from 'next-auth/react';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
 import { useEffect } from 'react';
@@ -11,7 +10,7 @@ import { useEffect } from 'react';
 //     return <Component {...pageProps} />;
 // }
 
-export default function App({ Component, pageProps: { session, ...pageProps } }) {
+export default function App({ Component, pageProps: { ...pageProps } }) {
     useEffect(() => {
         posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
             api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
@@ -25,9 +24,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
     return (
         <>
             <PostHogProvider client={posthog}>
-                <SessionProvider session={session}>
-                    <Component {...pageProps} />
-                </SessionProvider>
+                <Component {...pageProps} />
             </PostHogProvider>
         </>
     );
