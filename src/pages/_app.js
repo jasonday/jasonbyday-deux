@@ -1,9 +1,10 @@
 import '../css/main.css';
 
 // posthog
+import { Router } from 'next/router';
+import { useEffect } from 'react';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
-import { useEffect } from 'react';
 
 // original
 // export default function MyApp({ Component, pageProps }) {
