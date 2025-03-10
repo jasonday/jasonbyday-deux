@@ -103,7 +103,7 @@
             "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
+    "copyrightText": "Powered by [Netlify  ](https://www.netlify.com/)|  Copyright Jason Day 2025\n",
     "colors": "bg-dark-fg-light",
     "type": "Footer",
     "title": "Jason Day"
