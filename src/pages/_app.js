@@ -1,9 +1,9 @@
 // pages/_app.tsx
-import { useEffect } from 'react'
-import { Router } from 'next/router'
-import posthog from 'posthog-js'
-import { PostHogProvider } from 'posthog-js/react'
-import type { AppProps } from 'next/app'
+import { useEffect } from 'react';
+import { Router } from 'next/router';
+import posthog from 'posthog-js';
+import { PostHogProvider } from 'posthog-js/react';
+import { AppProps } from 'next/app';
 
 import '../css/main.css';
 
