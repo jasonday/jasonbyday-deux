@@ -19,6 +19,13 @@ export default function App({ Component, pageProps: { ...pageProps } }) {
                 if (process.env.NODE_ENV === 'development') posthog.debug();
             }
         });
+
+        // Track page views
+        const handleRouteChange = () => posthog?.capture('$pageview');
+        Router.events.on('routeChangeComplete', handleRouteChange);
+        return () => {
+            Router.events.off('routeChangeComplete', handleRouteChange);
+        };
     }, []);
 
     return (
