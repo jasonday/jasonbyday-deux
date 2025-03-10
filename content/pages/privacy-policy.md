@@ -4,7 +4,7 @@ title: Privacy policy
 sections:
   - type: ContentSection
     subtitle: ''
-    content: >+
+    content: >
       [www.jasonbyday.com](http://www.jasonbyday.com) Privacy Policy
 
 
@@ -120,7 +120,7 @@ sections:
       and practices.
 
 
-      ## How Long We Store Personal Data
+      ### How Long We Store Personal Data
 
 
       User data will be stored until the purpose the data was collected for has
@@ -156,7 +156,7 @@ sections:
       If you would like to know if we have collected your personal data, how we
       have used your personal data, if we have disclosed your personal data and
       to who we disclosed your personal data, or if you would like your data to
-      be deleted or modified in any way, please contact Jason Day directly. 
+      be deleted or modified in any way, please contact Jason Day directly.
 
 
       ## Modifications
@@ -169,7 +169,6 @@ sections:
       periodically review our Privacy Policy to ensure that they are notified of
       any updates. If necessary, we may notify users by email of changes to this
       Privacy Policy.
-
     isDraft: false
     colors: bg-light-fg-dark
     styles:
