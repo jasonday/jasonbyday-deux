@@ -1,36 +1,45 @@
-// pages/_app.tsx
-import { useEffect } from 'react';
-import { Router } from 'next/router';
-import posthog from 'posthog-js';
-import { PostHogProvider } from 'posthog-js/react';
-import { AppProps } from 'next/app';
-
 import '../css/main.css';
 
-export default function App({ Component, pageProps }: AppProps) {
+// posthog
+import { PostHogProvider } from 'posthog-js/react';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
-  useEffect(() => {
-    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
-      api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
-      person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
-      // Enable debug mode in development
-      loaded: (posthog) => {
-        if (process.env.NODE_ENV === 'development') posthog.debug()
-      }
-    })
+// original
+// export default function MyApp({ Component, pageProps }) {
+//     return <Component {...pageProps} />;
+// }
 
-    const handleRouteChange = () => posthog?.capture('$pageview')
+function MyApp({ Component, pageProps }) {
+    const router = useRouter();
 
-    Router.events.on('routeChangeComplete', handleRouteChange);
+    useEffect(() => {
+        const handleRouteChange = () => {
+            if (window.posthog) {
+                window.posthog.capture('$pageview');
+            }
+        };
 
-    return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange);
-    }
-  }, [])
+        router.events.on('routeChangeComplete', handleRouteChange);
 
-  return (
-    <PostHogProvider client={posthog}>
-      <Component {...pageProps} />
-    </PostHogProvider>
-  )
+        handleRouteChange();
+
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange);
+        };
+    }, [router.events]);
+
+    return (
+        <PostHogProvider
+            apiKey={process.env.NEXT_PUBLIC_POSTHOG_API_KEY}
+            options={{
+                api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
+                capture_pageview: false
+            }}
+        >
+            <Component {...pageProps} />
+        </PostHogProvider>
+    );
 }
+
+export default MyApp;
