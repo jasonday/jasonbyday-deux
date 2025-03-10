@@ -20,15 +20,6 @@
                 "elementId": ""
             },
             {
-                "label": "Accessibility statement",
-                "altText": "",
-                "url": "/accessibility-statement",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
                 "type": "Link",
                 "label": "See Tutorials",
                 "altText": "",
@@ -38,6 +29,15 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "elementId": ""
+            },
+            {
+                "label": "Accessibility statement",
+                "altText": "",
+                "url": "/accessibility-statement",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
             }
         ],
         "type": "FooterLinksGroup"
