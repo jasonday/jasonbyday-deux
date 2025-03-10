@@ -183,7 +183,7 @@ hideH1: false
 seo:
   type: Seo
   metaTitle: ''
-  metaDescription: Write here your new page's description including most relevant keywords.
+  metaDescription: JasonByDay.com privacy policy
   addTitleSuffix: true
   socialImage: /images/main-hero.jpg
   metaTags: []
