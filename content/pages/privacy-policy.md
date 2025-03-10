@@ -184,7 +184,6 @@ seo:
   type: Seo
   metaTitle: ''
   metaDescription: JasonByDay.com privacy policy
-  addTitleSuffix: true
-  socialImage: /images/main-hero.jpg
+  addTitleSuffix: false
   metaTags: []
 ---
